@@ -1,0 +1,16 @@
+{
+  "source": "Unity",
+  "applications": [
+    {
+      "app_key": "application.generated.unity.brasrobotise.exe",
+      "launch_type": "url",
+      "url": "steam://launch/",
+      "action_manifest_path": "Assets\\StreamingAssets\\SteamVR\\actions.json",
+      "strings": {
+        "en_us": {
+          "name": "bras-robotise [Testing]"
+        }
+      }
+    }
+  ]
+}
