@@ -4126,7 +4126,7 @@ GameObject:
   - component: {fileID: 1656095896}
   - component: {fileID: 1656095895}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: armStandOutline
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5849,69 +5849,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 93210926, guid: 0f186a9e6c0e7a94da78a1f78e4f49b3, type: 3}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 2644463802594958332, guid: 45ed1b4065d9df9488dd1e845d2398e4,
-        type: 3}
-    - target: {fileID: 93210926, guid: 0f186a9e6c0e7a94da78a1f78e4f49b3, type: 3}
-      propertyPath: m_Convex
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 262295417, guid: 0f186a9e6c0e7a94da78a1f78e4f49b3, type: 3}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: -3330111530798439608, guid: 507981e8c5627e540bd52ffdfdf1093b,
-        type: 3}
-    - target: {fileID: 262295417, guid: 0f186a9e6c0e7a94da78a1f78e4f49b3, type: 3}
-      propertyPath: m_Convex
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 758293709, guid: 0f186a9e6c0e7a94da78a1f78e4f49b3, type: 3}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: -7337951014359415304, guid: c9497a37d01de314aaa3a589433c2405,
-        type: 3}
-    - target: {fileID: 758293709, guid: 0f186a9e6c0e7a94da78a1f78e4f49b3, type: 3}
-      propertyPath: m_Convex
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 763190033, guid: 0f186a9e6c0e7a94da78a1f78e4f49b3, type: 3}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 8922537307284093191, guid: 513612b17c68a93409e8d3b94ff3087f,
-        type: 3}
-    - target: {fileID: 763190033, guid: 0f186a9e6c0e7a94da78a1f78e4f49b3, type: 3}
-      propertyPath: m_Convex
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 939449824, guid: 0f186a9e6c0e7a94da78a1f78e4f49b3, type: 3}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 1799842940974112373, guid: 4b1cc1519a382444d8edfebd56dbebcc,
-        type: 3}
-    - target: {fileID: 939449824, guid: 0f186a9e6c0e7a94da78a1f78e4f49b3, type: 3}
-      propertyPath: m_Convex
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1016844599, guid: 0f186a9e6c0e7a94da78a1f78e4f49b3, type: 3}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: -5564375128642410794, guid: 60466d362d3a8c34c93e6ef57376906b,
-        type: 3}
-    - target: {fileID: 1016844599, guid: 0f186a9e6c0e7a94da78a1f78e4f49b3, type: 3}
-      propertyPath: m_Convex
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1343247677, guid: 0f186a9e6c0e7a94da78a1f78e4f49b3, type: 3}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 2716777879176335229, guid: d049b0c23ae95ca4aa9a99e8f18fad40,
-        type: 3}
-    - target: {fileID: 1343247677, guid: 0f186a9e6c0e7a94da78a1f78e4f49b3, type: 3}
-      propertyPath: m_Convex
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5798183104997067919, guid: 0f186a9e6c0e7a94da78a1f78e4f49b3,
         type: 3}
       propertyPath: m_Name
