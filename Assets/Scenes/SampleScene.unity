@@ -5539,6 +5539,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 576164464, guid: 0f186a9e6c0e7a94da78a1f78e4f49b3, type: 3}
+      propertyPath: j6Rotation
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 576164464, guid: 0f186a9e6c0e7a94da78a1f78e4f49b3, type: 3}
+      propertyPath: j2ArmRotation
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 576164464, guid: 0f186a9e6c0e7a94da78a1f78e4f49b3, type: 3}
+      propertyPath: j4ArmRotation
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 576164464, guid: 0f186a9e6c0e7a94da78a1f78e4f49b3, type: 3}
+      propertyPath: j2BaseRotation
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 576164464, guid: 0f186a9e6c0e7a94da78a1f78e4f49b3, type: 3}
+      propertyPath: j5WristRotation
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 576164464, guid: 0f186a9e6c0e7a94da78a1f78e4f49b3, type: 3}
+      propertyPath: j3HousingRotation
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4987535854704875753, guid: 0f186a9e6c0e7a94da78a1f78e4f49b3,
         type: 3}
       propertyPath: j6Rotation
@@ -5592,7 +5616,7 @@ PrefabInstance:
     - target: {fileID: 5104739597278339888, guid: 0f186a9e6c0e7a94da78a1f78e4f49b3,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7432033
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 5104739597278339888, guid: 0f186a9e6c0e7a94da78a1f78e4f49b3,
         type: 3}
@@ -5607,7 +5631,7 @@ PrefabInstance:
     - target: {fileID: 5104739597278339888, guid: 0f186a9e6c0e7a94da78a1f78e4f49b3,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.6690657
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 5798183104997067919, guid: 0f186a9e6c0e7a94da78a1f78e4f49b3,
         type: 3}
