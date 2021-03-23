@@ -3,16 +3,16 @@ using UnityEngine;
 [ExecuteInEditMode]
 public class Movement : MonoBehaviour
 {
-    public const float J2BaseMinRotation = -360f;
-    public const float J2BaseMaxRotation = 360f;
-    public const float J2ArmMinRotation = -100f;
+    public const float J2BaseMinRotation = -170f;
+    public const float J2BaseMaxRotation = 170f;
+    public const float J2ArmMinRotation = -110f;
     public const float J2ArmMaxRotation = 130f;
-    public const float J3HousingMinRotation = -100f;
-    public const float J3HousingMaxRotation = 65f;
-    public const float J4ArmMinRotation = -180f;
-    public const float J4ArmMaxRotation = 180f;
-    public const float J5WristMinRotation = -90f;
-    public const float J5WristMaxRotation = 90f;
+    public const float J3HousingMinRotation = -122f;
+    public const float J3HousingMaxRotation = 75f;
+    public const float J4ArmMinRotation = -190f;
+    public const float J4ArmMaxRotation = 190f;
+    public const float J5WristMinRotation = -120f;
+    public const float J5WristMaxRotation = 120f;
     public const float J6MinRotation = -360f;
     public const float J6MaxRotation = 360f;
 
