@@ -5569,23 +5569,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 9403320, guid: 2fc71119aed2f7a43b52d9aa05dd65c0, type: 3}
-      propertyPath: m_Damper
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9403320, guid: 2fc71119aed2f7a43b52d9aa05dd65c0, type: 3}
-      propertyPath: m_Spring
-      value: 500
-      objectReference: {fileID: 0}
-    - target: {fileID: 9403323, guid: 2fc71119aed2f7a43b52d9aa05dd65c0, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 34cea06c9db0d4c42978e62c3b1b2c17, type: 2}
-    - target: {fileID: 3664834825005269448, guid: 2fc71119aed2f7a43b52d9aa05dd65c0,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 34cea06c9db0d4c42978e62c3b1b2c17, type: 2}
     - target: {fileID: 4823642050534973880, guid: 2fc71119aed2f7a43b52d9aa05dd65c0,
         type: 3}
       propertyPath: m_Name
