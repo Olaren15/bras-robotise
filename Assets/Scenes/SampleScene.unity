@@ -3264,36 +3264,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 9018183021049682561}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1436944394
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1436944395}
-  m_Layer: 0
-  m_Name: grabOffsetLeft
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1436944395
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1436944394}
-  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0.0473, y: -0, z: 0.1893}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 3943235535404401986}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &1438956375
 GameObject:
   m_ObjectHideFlags: 0
@@ -5615,47 +5585,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 9403319, guid: 2fc71119aed2f7a43b52d9aa05dd65c0, type: 3}
-      propertyPath: defaultMaterial
-      value: 
-      objectReference: {fileID: -3033667219593020291, guid: cbeb092b9053c77428b674b93e6305b1,
-        type: 3}
-    - target: {fileID: 9403319, guid: 2fc71119aed2f7a43b52d9aa05dd65c0, type: 3}
-      propertyPath: pressedMaterial
-      value: 
-      objectReference: {fileID: 2100000, guid: 4acb926fdad02384bb73915b7191ba70, type: 2}
-    - target: {fileID: 9403319, guid: 2fc71119aed2f7a43b52d9aa05dd65c0, type: 3}
-      propertyPath: downEvent.m_PersistentCalls.m_Calls.Array.size
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9403319, guid: 2fc71119aed2f7a43b52d9aa05dd65c0, type: 3}
-      propertyPath: downEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1224770700459170446, guid: 2fc71119aed2f7a43b52d9aa05dd65c0,
-        type: 3}
-      propertyPath: attachmentOffset
-      value: 
-      objectReference: {fileID: 1436944395}
     - target: {fileID: 4823642050534973880, guid: 2fc71119aed2f7a43b52d9aa05dd65c0,
         type: 3}
       propertyPath: m_Name
       value: controlPanel
-      objectReference: {fileID: 0}
-    - target: {fileID: 5303382395082178263, guid: 2fc71119aed2f7a43b52d9aa05dd65c0,
-        type: 3}
-      propertyPath: hideHandOnAttach
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5303382395082178263, guid: 2fc71119aed2f7a43b52d9aa05dd65c0,
-        type: 3}
-      propertyPath: handFollowTransform
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5303382395082178263, guid: 2fc71119aed2f7a43b52d9aa05dd65c0,
-        type: 3}
-      propertyPath: useHandObjectAttachmentPoint
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8806281276848015589, guid: 2fc71119aed2f7a43b52d9aa05dd65c0,
         type: 3}
@@ -5714,12 +5647,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2fc71119aed2f7a43b52d9aa05dd65c0, type: 3}
---- !u!4 &3943235535404401986 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8806281276848015589, guid: 2fc71119aed2f7a43b52d9aa05dd65c0,
-    type: 3}
-  m_PrefabInstance: {fileID: 3943235535404401985}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4987535854704875751
 PrefabInstance:
   m_ObjectHideFlags: 0
