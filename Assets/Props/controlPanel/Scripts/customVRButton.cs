@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -14,9 +15,14 @@ public class customVRButton : MonoBehaviour
 
     private Vector3 startPos;
 
+    private SpringJoint springJoint;
+    private PositionLocalConstraints localConstraints;
+
     private void Start()
     {
         startPos = transform.localPosition;
+        springJoint = GetComponent<SpringJoint>();
+        localConstraints = GetComponent<PositionLocalConstraints>();
     }
 
     private void Update()
@@ -41,5 +47,15 @@ public class customVRButton : MonoBehaviour
         {
             transform.localPosition = new Vector3(transform.localPosition.x, startPos.y, transform.localPosition.z);
         }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        localConstraints.freezeY = false;
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        localConstraints.freezeY = true;
     }
 }
