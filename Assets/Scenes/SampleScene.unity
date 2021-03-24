@@ -5585,6 +5585,23 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 9403319, guid: 2fc71119aed2f7a43b52d9aa05dd65c0, type: 3}
+      propertyPath: defaultMaterial
+      value: 
+      objectReference: {fileID: -3033667219593020291, guid: cbeb092b9053c77428b674b93e6305b1,
+        type: 3}
+    - target: {fileID: 9403319, guid: 2fc71119aed2f7a43b52d9aa05dd65c0, type: 3}
+      propertyPath: pressedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 4acb926fdad02384bb73915b7191ba70, type: 2}
+    - target: {fileID: 9403319, guid: 2fc71119aed2f7a43b52d9aa05dd65c0, type: 3}
+      propertyPath: downEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9403319, guid: 2fc71119aed2f7a43b52d9aa05dd65c0, type: 3}
+      propertyPath: downEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4823642050534973880, guid: 2fc71119aed2f7a43b52d9aa05dd65c0,
         type: 3}
       propertyPath: m_Name
