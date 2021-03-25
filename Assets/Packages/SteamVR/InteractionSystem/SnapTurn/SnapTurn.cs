@@ -10,6 +10,8 @@ namespace Valve.VR.InteractionSystem
     //-----------------------------------------------------------------------------
     public class SnapTurn : MonoBehaviour
     {
+        public bool enableLeftHand = true;
+        
         public float snapAngle = 90.0f;
 
         public bool showTurnAnimation = true;
@@ -74,12 +76,17 @@ namespace Valve.VR.InteractionSystem
                     && player.leftHand.currentAttachedTeleportManager != null
                     && player.leftHand.currentAttachedTeleportManager.teleportAllowed);
 
+                if (!enableLeftHand)
+                {
+                    leftHandValid = false;
+                }
 
                 bool leftHandTurnLeft = snapLeftAction.GetStateDown(SteamVR_Input_Sources.LeftHand) && leftHandValid;
                 bool rightHandTurnLeft = snapLeftAction.GetStateDown(SteamVR_Input_Sources.RightHand) && rightHandValid;
 
                 bool leftHandTurnRight = snapRightAction.GetStateDown(SteamVR_Input_Sources.LeftHand) && leftHandValid;
                 bool rightHandTurnRight = snapRightAction.GetStateDown(SteamVR_Input_Sources.RightHand) && rightHandValid;
+
 
                 if (leftHandTurnLeft || rightHandTurnLeft)
                 {
