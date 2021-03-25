@@ -17,7 +17,7 @@ public class customVRButton : MonoBehaviour
     public Material defaultMaterial;
     public Material pressedMaterial;
     private MeshRenderer meshRenderer;
-    
+
     private Vector3 startPos;
 
     private SpringJoint springJoint;
@@ -34,12 +34,16 @@ public class customVRButton : MonoBehaviour
     private void Update()
     {
         bool originalPressed = pressed;
-        
+
         float distance = Mathf.Abs(transform.localPosition.y - startPos.y);
         if (distance >= pressLength)
         {
             transform.localPosition = new Vector3(transform.localPosition.x, startPos.y - pressLength,
                 transform.localPosition.z);
+        }
+
+        if (distance >= pressLength * 0.75f)
+        {
             if (!pressed)
             {
                 pressed = true;
