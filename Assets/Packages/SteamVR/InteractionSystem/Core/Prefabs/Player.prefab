@@ -223,7 +223,7 @@ GameObject:
   - component: {fileID: 11465950}
   - component: {fileID: 242500726}
   - component: {fileID: 242500724}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
@@ -290,13 +290,13 @@ CharacterController:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Height: 1.47
-  m_Radius: 0.18
+  m_Height: 1.3
+  m_Radius: 0.06
   m_SlopeLimit: 45
   m_StepOffset: 0.3
-  m_SkinWidth: 0.08
+  m_SkinWidth: 0.0001
   m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 0.64, z: 0}
+  m_Center: {x: 0, y: 0.6, z: 0}
 --- !u!114 &242500724
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -314,6 +314,7 @@ MonoBehaviour:
     needsReinit: 0
   speed: 2
   vrCamera: {fileID: 429506}
+  EnableMovement: 0
 --- !u!1 &109154
 GameObject:
   m_ObjectHideFlags: 0
@@ -532,7 +533,7 @@ GameObject:
   - component: {fileID: 453574}
   - component: {fileID: 13533284}
   - component: {fileID: 5452286}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: HeadCollider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2658,6 +2659,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7434e43635fb2924583f5e0f2fb6ed3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enableLeftHand: 1
   snapAngle: 45
   showTurnAnimation: 1
   snapTurnSource: {fileID: 82000013955136614}
