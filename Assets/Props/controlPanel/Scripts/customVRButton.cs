@@ -11,6 +11,7 @@ public class customVRButton : MonoBehaviour
 
     public float pressLength;
     public bool pressed;
+    public bool toggle;
     public ButtonEvent downEvent;
 
 
@@ -57,7 +58,19 @@ public class customVRButton : MonoBehaviour
 
         if (originalPressed != pressed)
         {
-            meshRenderer.material = pressed ? pressedMaterial : defaultMaterial;
+            //meshRenderer.material = pressed ? pressedMaterial : defaultMaterial;
+            if (pressed)
+            {
+                meshRenderer.material = pressedMaterial;
+            }
+            else
+            {
+                if (!toggle)
+                {
+                    meshRenderer.material = defaultMaterial;
+
+                }
+            }
         }
 
         if (transform.localPosition.y > startPos.y)
