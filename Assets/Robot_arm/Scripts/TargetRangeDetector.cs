@@ -1,8 +1,4 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using RootMotion.FinalIK;
-using UnityEngine;
+﻿using UnityEngine;
 using Valve.VR;
 using Valve.VR.InteractionSystem;
 
@@ -22,15 +18,17 @@ public class TargetRangeDetector : MonoBehaviour
     public Material outOfRangeMaterial;
     private Material originalMaterial;
 
+    private MeshRenderer rangeRenderer;
 
     private void Start()
     {
         hands = FindObjectsOfType<Hand>();
         sphereCollider = GetComponent<SphereCollider>();
         originalMaterial = target.GetComponent<MeshRenderer>().material;
+        rangeRenderer = GetComponent<MeshRenderer>();
     }
 
-    void Update()
+    private void Update()
     {
         if (!isInRange)
         {
@@ -41,9 +39,9 @@ public class TargetRangeDetector : MonoBehaviour
                     if (hand.currentAttachedObject == target)
                     {
                         float distance = Vector3.Distance(target.transform.position, transform.position);
-                        distance -= sphereCollider.radius;
+                        distance -= sphereCollider.radius * transform.localScale.x;
                         haptics.Execute(0, vibrationDuration, vibrationFrequency, distance, hand.handType);
-                        timeUntilNextVibration = vibrationDuration * 2;
+                        timeUntilNextVibration = vibrationDuration * 1.2f;
                     }
                 }
             }
@@ -60,6 +58,7 @@ public class TargetRangeDetector : MonoBehaviour
         {
             isInRange = false;
             target.GetComponent<MeshRenderer>().material = outOfRangeMaterial;
+            rangeRenderer.enabled = true;
         }
     }
 
@@ -69,7 +68,7 @@ public class TargetRangeDetector : MonoBehaviour
         {
             isInRange = true;
             target.GetComponent<MeshRenderer>().material = originalMaterial;
-
+            rangeRenderer.enabled = false;
         }
     }
 }
