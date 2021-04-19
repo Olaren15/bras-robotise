@@ -67,7 +67,7 @@ GameObject:
   - component: {fileID: 839402001}
   m_Layer: 3
   m_Name: ButtonCube
-  m_TagString: Untagged
+  m_TagString: ButtonSettings
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -566,7 +566,7 @@ GameObject:
   - component: {fileID: 343739734}
   m_Layer: 3
   m_Name: ButtonCube
-  m_TagString: Untagged
+  m_TagString: ButtonMain
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -674,7 +674,7 @@ SpringJoint:
   m_ConnectedArticulationBody: {fileID: 0}
   m_Anchor: {x: 0, y: 0.49999237, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.000000010053905, y: 0.029999845, z: 0.0005999934}
+  m_ConnectedAnchor: {x: 0.00000013070077, y: 0.02999976, z: 0.000599974}
   serializedVersion: 2
   m_Spring: 300
   m_Damper: 10
@@ -1130,7 +1130,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 545574607}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.0635, y: 0.0013, z: 0.1123}
+  m_LocalPosition: {x: -0.0635, y: 0.0013, z: 0.1128}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2069767418}
@@ -1240,7 +1240,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 595572580}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.299, y: 0.01, z: 0.028}
+  m_LocalPosition: {x: 0.01, y: 0.01, z: 0.038}
   m_LocalScale: {x: 4.7224035, y: 50, z: 3.247346}
   m_Children:
   - {fileID: 1485219907}
@@ -1282,7 +1282,7 @@ GameObject:
   - component: {fileID: 613503615}
   m_Layer: 3
   m_Name: ButtonCube
-  m_TagString: Untagged
+  m_TagString: ButtonSettings
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1483,7 +1483,7 @@ GameObject:
   - component: {fileID: 682017192}
   m_Layer: 3
   m_Name: ButtonCube
-  m_TagString: Untagged
+  m_TagString: ButtonSettings
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1916,7 +1916,7 @@ GameObject:
   - component: {fileID: 811142043}
   m_Layer: 0
   m_Name: SequenceList
-  m_TagString: Untagged
+  m_TagString: ButtonMain
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2101,7 +2101,7 @@ GameObject:
   - component: {fileID: 886188001}
   m_Layer: 3
   m_Name: ButtonCube
-  m_TagString: Untagged
+  m_TagString: ButtonSettings
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2885,7 +2885,7 @@ GameObject:
   - component: {fileID: 1068783662}
   m_Layer: 3
   m_Name: ButtonCube
-  m_TagString: Untagged
+  m_TagString: ButtonMain
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2993,7 +2993,7 @@ SpringJoint:
   m_ConnectedArticulationBody: {fileID: 0}
   m_Anchor: {x: 0, y: 0.49999237, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: 0.029999845, z: 0.00060000154}
+  m_ConnectedAnchor: {x: -0.000000012621675, y: 0.029999897, z: 0.00059999694}
   serializedVersion: 2
   m_Spring: 300
   m_Damper: 10
@@ -3245,7 +3245,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1179957550}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.29899988, y: 0.009998649, z: 0.362}
+  m_LocalPosition: {x: -0.29899988, y: 0.009998649, z: 0.038}
   m_LocalScale: {x: 4.7224035, y: 50, z: 3.247346}
   m_Children:
   - {fileID: 1728420272}
@@ -3378,7 +3378,7 @@ GameObject:
   - component: {fileID: 1230960729}
   m_Layer: 3
   m_Name: ButtonCube
-  m_TagString: Untagged
+  m_TagString: ButtonSettings
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3932,7 +3932,7 @@ GameObject:
   - component: {fileID: 1485219908}
   m_Layer: 3
   m_Name: ButtonCube
-  m_TagString: Untagged
+  m_TagString: ButtonMain
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4040,7 +4040,7 @@ SpringJoint:
   m_ConnectedArticulationBody: {fileID: 0}
   m_Anchor: {x: 0, y: 0.49999237, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: 0.029999845, z: 0.00060000096}
+  m_ConnectedAnchor: {x: -0.000000047331284, y: 0.02999995, z: 0.00059999694}
   serializedVersion: 2
   m_Spring: 300
   m_Damper: 10
@@ -4353,7 +4353,7 @@ GameObject:
   - component: {fileID: 1728420273}
   m_Layer: 3
   m_Name: ButtonCube
-  m_TagString: Untagged
+  m_TagString: ButtonMain
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4462,7 +4462,7 @@ SpringJoint:
   m_ConnectedArticulationBody: {fileID: 0}
   m_Anchor: {x: 0, y: 0.49999237, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: 0.029999847, z: 0.00060001184}
+  m_ConnectedAnchor: {x: -0.0000000063108376, y: 0.029999873, z: 0.00059999694}
   serializedVersion: 2
   m_Spring: 300
   m_Damper: 10
@@ -4493,22 +4493,10 @@ MonoBehaviour:
   downEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3970841446563053}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 8722250166587974984}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 1300936721}
+        m_TargetAssemblyTypeName: ToggleShow, Assembly-CSharp
+        m_MethodName: GoToSettings
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -4695,8 +4683,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1830788010}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.01, y: 0.01, z: 0.2032}
-  m_LocalScale: {x: 4.7224035, y: 50, z: 12.033595}
+  m_LocalPosition: {x: 0.01, y: 0.01, z: 0.3156}
+  m_LocalScale: {x: 4.7224035, y: 50, z: 6.359112}
   m_Children:
   - {fileID: 2079907136}
   m_Father: {fileID: 9016504810384233626}
@@ -4829,7 +4817,7 @@ GameObject:
   - component: {fileID: 1914759180}
   m_Layer: 3
   m_Name: ButtonCube
-  m_TagString: Untagged
+  m_TagString: ButtonMain
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4937,7 +4925,7 @@ SpringJoint:
   m_ConnectedArticulationBody: {fileID: 0}
   m_Anchor: {x: 0, y: 0.49999237, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.0000000063108376, y: 0.029999847, z: 0}
+  m_ConnectedAnchor: {x: -0.0000000063108376, y: 0.02999984, z: 0.000000018746217}
   serializedVersion: 2
   m_Spring: 300
   m_Damper: 10
@@ -5432,7 +5420,7 @@ GameObject:
   - component: {fileID: 2069767419}
   m_Layer: 3
   m_Name: ButtonCube
-  m_TagString: Untagged
+  m_TagString: ButtonSettings
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5541,7 +5529,7 @@ SpringJoint:
   m_ConnectedArticulationBody: {fileID: 0}
   m_Anchor: {x: 0, y: 0.49999237, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.000000014901161, y: 0.029999804, z: -0.000000022351742}
+  m_ConnectedAnchor: {x: -0.000000014901161, y: 0.029999804, z: 0.000000052154064}
   serializedVersion: 2
   m_Spring: 300
   m_Damper: 10
@@ -5572,10 +5560,10 @@ MonoBehaviour:
   downEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3970841446563053}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 1300936721}
+        m_TargetAssemblyTypeName: ToggleShow, Assembly-CSharp
+        m_MethodName: GoToMain
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -5583,18 +5571,6 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 8722250166587974984}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
         m_CallState: 2
   defaultMaterial: {fileID: -3033667219593020291, guid: cbeb092b9053c77428b674b93e6305b1,
     type: 3}
@@ -5646,7 +5622,7 @@ GameObject:
   - component: {fileID: 2079907137}
   m_Layer: 3
   m_Name: ButtonCube
-  m_TagString: Untagged
+  m_TagString: ButtonMain
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5754,7 +5730,7 @@ SpringJoint:
   m_ConnectedArticulationBody: {fileID: 0}
   m_Anchor: {x: 0, y: 0.49999237, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -1.9721368e-10, y: 0.029999845, z: 0.0000000024765936}
+  m_ConnectedAnchor: {x: -0.000000047331284, y: 0.02999995, z: 0.000000014059663}
   serializedVersion: 2
   m_Spring: 300
   m_Damper: 10
@@ -5847,7 +5823,7 @@ GameObject:
   - component: {fileID: 2094847007}
   m_Layer: 3
   m_Name: ButtonCube
-  m_TagString: Untagged
+  m_TagString: ButtonMain
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5955,7 +5931,7 @@ SpringJoint:
   m_ConnectedArticulationBody: {fileID: 0}
   m_Anchor: {x: 0, y: 0.49999237, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.000000010053905, y: 0.029999845, z: 0.0005999934}
+  m_ConnectedAnchor: {x: 0.00000013070077, y: 0.02999976, z: 0.0005999789}
   serializedVersion: 2
   m_Spring: 300
   m_Damper: 10
@@ -6159,7 +6135,7 @@ GameObject:
   - component: {fileID: 7753952566337522223}
   m_Layer: 3
   m_Name: Icon
-  m_TagString: Untagged
+  m_TagString: ButtonSettings
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6240,7 +6216,7 @@ GameObject:
   - component: {fileID: 8386352728713941331}
   m_Layer: 3
   m_Name: Icon
-  m_TagString: Untagged
+  m_TagString: ButtonSettings
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6402,7 +6378,7 @@ GameObject:
   - component: {fileID: 2323896497691459822}
   m_Layer: 3
   m_Name: Icon
-  m_TagString: Untagged
+  m_TagString: ButtonMain
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6743,7 +6719,7 @@ GameObject:
   - component: {fileID: 7740722466065277750}
   m_Layer: 3
   m_Name: ButtonCube
-  m_TagString: Untagged
+  m_TagString: ButtonSettings
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6984,7 +6960,7 @@ GameObject:
   - component: {fileID: 5068610909419778774}
   m_Layer: 3
   m_Name: ButtonCube
-  m_TagString: Untagged
+  m_TagString: ButtonSettings
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7219,7 +7195,7 @@ GameObject:
   - component: {fileID: 1385107898770109304}
   m_Layer: 3
   m_Name: Icon
-  m_TagString: Untagged
+  m_TagString: ButtonSettings
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7298,6 +7274,7 @@ GameObject:
   - component: {fileID: 5485127027780620709}
   - component: {fileID: 6687827480537030938}
   - component: {fileID: 4937381322138870827}
+  - component: {fileID: 1300936721}
   m_Layer: 0
   m_Name: Screen
   m_TagString: Untagged
@@ -7370,6 +7347,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &1300936721
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7249605250885883868}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 629f4f6ab8e9e974e9344933cac16004, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7636805550156992237
 GameObject:
   m_ObjectHideFlags: 0
@@ -7431,7 +7420,7 @@ GameObject:
   - component: {fileID: 6792871684735924822}
   m_Layer: 3
   m_Name: Icon
-  m_TagString: Untagged
+  m_TagString: ButtonSettings
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7514,7 +7503,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &9016504810384233626
 Transform:
   m_ObjectHideFlags: 0
