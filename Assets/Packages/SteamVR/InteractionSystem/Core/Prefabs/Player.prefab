@@ -2751,7 +2751,7 @@ GameObject:
   - component: {fileID: 107928381}
   - component: {fileID: 107928382}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: Inventory
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2796,6 +2796,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4f3a4e196f09844b87b1c1b87e01884, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  haptics:
+    actionPath: /actions/default/out/Haptic
+    needsReinit: 0
 --- !u!54 &107928381
 Rigidbody:
   m_ObjectHideFlags: 0

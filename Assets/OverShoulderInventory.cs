@@ -10,6 +10,7 @@ public class OverShoulderInventory : MonoBehaviour
     private Hand[] hands;
     private List<GameObject> objectsInCollider;
     private GameObject storedItem;
+    public SteamVR_Action_Vibration haptics;
 
     void Start()
     {
@@ -30,6 +31,7 @@ public class OverShoulderInventory : MonoBehaviour
                     {
                         storedItem = hand.currentAttachedObject;
                         hand.DetachObject(hand.currentAttachedObject);
+                        haptics.Execute(0, 0.15f, 150, 0.2f, hand.handType);
                         storedItem.SetActive(false);
                     }
 
@@ -37,6 +39,7 @@ public class OverShoulderInventory : MonoBehaviour
                     {
                         storedItem.SetActive(true);
                         hand.AttachObject(storedItem, GrabTypes.Grip);
+                        haptics.Execute(0, 0.15f, 150, 0.2f, hand.handType);
                         storedItem = null;
                     }
                 }
