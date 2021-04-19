@@ -674,7 +674,7 @@ SpringJoint:
   m_ConnectedArticulationBody: {fileID: 0}
   m_Anchor: {x: 0, y: 0.49999237, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.00000013070077, y: 0.02999976, z: 0.000599974}
+  m_ConnectedAnchor: {x: 0.000000010053905, y: 0.029999845, z: 0.0005999934}
   serializedVersion: 2
   m_Spring: 300
   m_Damper: 10
@@ -701,61 +701,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pressLength: 0.018
   pressed: 0
-  toggle: 1
+  toggle: 0
   downEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 281322268}
-        m_TargetAssemblyTypeName: VRControlsManager, Assembly-CSharp
-        m_MethodName: SetMovementContinuous
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgumentAssemblyTypeName: 
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 9403323}
-        m_TargetAssemblyTypeName: UnityEngine.Renderer, UnityEngine
-        m_MethodName: set_material
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: -3033667219593020291, guid: cbeb092b9053c77428b674b93e6305b1,
-            type: 3}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Material, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 343739740}
-        m_TargetAssemblyTypeName: UnityEngine.Renderer, UnityEngine
-        m_MethodName: set_material
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 2100000, guid: 4acb926fdad02384bb73915b7191ba70,
-            type: 2}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Material, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 8539398723346614924}
-        m_TargetAssemblyTypeName: UnityEngine.Renderer, UnityEngine
-        m_MethodName: set_material
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: -3033667219593020291, guid: cbeb092b9053c77428b674b93e6305b1,
-            type: 3}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Material, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+        m_CallState: 0
   defaultMaterial: {fileID: -3033667219593020291, guid: cbeb092b9053c77428b674b93e6305b1,
     type: 3}
   pressedMaterial: {fileID: 2100000, guid: 4acb926fdad02384bb73915b7191ba70, type: 2}
@@ -1456,61 +1417,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pressLength: 0.018
   pressed: 0
-  toggle: 1
+  toggle: 0
   downEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 281322268}
-        m_TargetAssemblyTypeName: VRControlsManager, Assembly-CSharp
-        m_MethodName: SetMovementContinuous
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgumentAssemblyTypeName: 
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 9403323}
-        m_TargetAssemblyTypeName: UnityEngine.Renderer, UnityEngine
-        m_MethodName: set_material
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: -3033667219593020291, guid: cbeb092b9053c77428b674b93e6305b1,
-            type: 3}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Material, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 613503621}
-        m_TargetAssemblyTypeName: UnityEngine.Renderer, UnityEngine
-        m_MethodName: set_material
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 2100000, guid: 4acb926fdad02384bb73915b7191ba70,
-            type: 2}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Material, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 8539398723346614924}
-        m_TargetAssemblyTypeName: UnityEngine.Renderer, UnityEngine
-        m_MethodName: set_material
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: -3033667219593020291, guid: cbeb092b9053c77428b674b93e6305b1,
-            type: 3}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Material, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+        m_CallState: 0
   defaultMaterial: {fileID: -3033667219593020291, guid: cbeb092b9053c77428b674b93e6305b1,
     type: 3}
   pressedMaterial: {fileID: 2100000, guid: 4acb926fdad02384bb73915b7191ba70, type: 2}
@@ -1696,61 +1618,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pressLength: 0.018
   pressed: 0
-  toggle: 1
+  toggle: 0
   downEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 281322268}
-        m_TargetAssemblyTypeName: VRControlsManager, Assembly-CSharp
-        m_MethodName: SetMovementContinuous
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgumentAssemblyTypeName: 
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 9403323}
-        m_TargetAssemblyTypeName: UnityEngine.Renderer, UnityEngine
-        m_MethodName: set_material
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: -3033667219593020291, guid: cbeb092b9053c77428b674b93e6305b1,
-            type: 3}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Material, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 682017198}
-        m_TargetAssemblyTypeName: UnityEngine.Renderer, UnityEngine
-        m_MethodName: set_material
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 2100000, guid: 4acb926fdad02384bb73915b7191ba70,
-            type: 2}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Material, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 8539398723346614924}
-        m_TargetAssemblyTypeName: UnityEngine.Renderer, UnityEngine
-        m_MethodName: set_material
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: -3033667219593020291, guid: cbeb092b9053c77428b674b93e6305b1,
-            type: 3}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Material, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+        m_CallState: 0
   defaultMaterial: {fileID: -3033667219593020291, guid: cbeb092b9053c77428b674b93e6305b1,
     type: 3}
   pressedMaterial: {fileID: 2100000, guid: 4acb926fdad02384bb73915b7191ba70, type: 2}
@@ -2353,61 +2236,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pressLength: 0.018
   pressed: 0
-  toggle: 1
+  toggle: 0
   downEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 281322268}
-        m_TargetAssemblyTypeName: VRControlsManager, Assembly-CSharp
-        m_MethodName: SetMovementContinuous
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgumentAssemblyTypeName: 
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 9403323}
-        m_TargetAssemblyTypeName: UnityEngine.Renderer, UnityEngine
-        m_MethodName: set_material
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: -3033667219593020291, guid: cbeb092b9053c77428b674b93e6305b1,
-            type: 3}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Material, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 886188007}
-        m_TargetAssemblyTypeName: UnityEngine.Renderer, UnityEngine
-        m_MethodName: set_material
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 2100000, guid: 4acb926fdad02384bb73915b7191ba70,
-            type: 2}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Material, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 8539398723346614924}
-        m_TargetAssemblyTypeName: UnityEngine.Renderer, UnityEngine
-        m_MethodName: set_material
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: -3033667219593020291, guid: cbeb092b9053c77428b674b93e6305b1,
-            type: 3}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Material, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+        m_CallState: 0
   defaultMaterial: {fileID: -3033667219593020291, guid: cbeb092b9053c77428b674b93e6305b1,
     type: 3}
   pressedMaterial: {fileID: 2100000, guid: 4acb926fdad02384bb73915b7191ba70, type: 2}
@@ -3149,7 +2993,7 @@ SpringJoint:
   m_ConnectedArticulationBody: {fileID: 0}
   m_Anchor: {x: 0, y: 0.49999237, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.000000012621675, y: 0.029999897, z: 0.00059999694}
+  m_ConnectedAnchor: {x: 0, y: 0.029999845, z: 0.00060000154}
   serializedVersion: 2
   m_Spring: 300
   m_Damper: 10
@@ -3176,61 +3020,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pressLength: 0.018
   pressed: 0
-  toggle: 1
+  toggle: 0
   downEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 281322268}
-        m_TargetAssemblyTypeName: VRControlsManager, Assembly-CSharp
-        m_MethodName: SetMovementContinuous
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgumentAssemblyTypeName: 
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 9403323}
-        m_TargetAssemblyTypeName: UnityEngine.Renderer, UnityEngine
-        m_MethodName: set_material
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: -3033667219593020291, guid: cbeb092b9053c77428b674b93e6305b1,
-            type: 3}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Material, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1068783668}
-        m_TargetAssemblyTypeName: UnityEngine.Renderer, UnityEngine
-        m_MethodName: set_material
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 2100000, guid: 4acb926fdad02384bb73915b7191ba70,
-            type: 2}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Material, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 8539398723346614924}
-        m_TargetAssemblyTypeName: UnityEngine.Renderer, UnityEngine
-        m_MethodName: set_material
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: -3033667219593020291, guid: cbeb092b9053c77428b674b93e6305b1,
-            type: 3}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Material, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+        m_CallState: 0
   defaultMaterial: {fileID: -3033667219593020291, guid: cbeb092b9053c77428b674b93e6305b1,
     type: 3}
   pressedMaterial: {fileID: 2100000, guid: 4acb926fdad02384bb73915b7191ba70, type: 2}
@@ -3708,61 +3513,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pressLength: 0.018
   pressed: 0
-  toggle: 1
+  toggle: 0
   downEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 281322268}
-        m_TargetAssemblyTypeName: VRControlsManager, Assembly-CSharp
-        m_MethodName: SetMovementContinuous
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgumentAssemblyTypeName: 
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 9403323}
-        m_TargetAssemblyTypeName: UnityEngine.Renderer, UnityEngine
-        m_MethodName: set_material
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: -3033667219593020291, guid: cbeb092b9053c77428b674b93e6305b1,
-            type: 3}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Material, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1230960735}
-        m_TargetAssemblyTypeName: UnityEngine.Renderer, UnityEngine
-        m_MethodName: set_material
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 2100000, guid: 4acb926fdad02384bb73915b7191ba70,
-            type: 2}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Material, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 8539398723346614924}
-        m_TargetAssemblyTypeName: UnityEngine.Renderer, UnityEngine
-        m_MethodName: set_material
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: -3033667219593020291, guid: cbeb092b9053c77428b674b93e6305b1,
-            type: 3}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Material, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+        m_CallState: 0
   defaultMaterial: {fileID: -3033667219593020291, guid: cbeb092b9053c77428b674b93e6305b1,
     type: 3}
   pressedMaterial: {fileID: 2100000, guid: 4acb926fdad02384bb73915b7191ba70, type: 2}
@@ -4274,7 +4040,7 @@ SpringJoint:
   m_ConnectedArticulationBody: {fileID: 0}
   m_Anchor: {x: 0, y: 0.49999237, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.000000018932512, y: 0.029999847, z: 0.00060002046}
+  m_ConnectedAnchor: {x: 0, y: 0.029999845, z: 0.00060000096}
   serializedVersion: 2
   m_Spring: 300
   m_Damper: 10
@@ -4301,61 +4067,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pressLength: 0.018
   pressed: 0
-  toggle: 1
+  toggle: 0
   downEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 281322268}
-        m_TargetAssemblyTypeName: VRControlsManager, Assembly-CSharp
-        m_MethodName: SetMovementContinuous
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgumentAssemblyTypeName: 
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 9403323}
-        m_TargetAssemblyTypeName: UnityEngine.Renderer, UnityEngine
-        m_MethodName: set_material
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: -3033667219593020291, guid: cbeb092b9053c77428b674b93e6305b1,
-            type: 3}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Material, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1485219914}
-        m_TargetAssemblyTypeName: UnityEngine.Renderer, UnityEngine
-        m_MethodName: set_material
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 2100000, guid: 4acb926fdad02384bb73915b7191ba70,
-            type: 2}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Material, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 8539398723346614924}
-        m_TargetAssemblyTypeName: UnityEngine.Renderer, UnityEngine
-        m_MethodName: set_material
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: -3033667219593020291, guid: cbeb092b9053c77428b674b93e6305b1,
-            type: 3}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Material, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+        m_CallState: 0
   defaultMaterial: {fileID: -3033667219593020291, guid: cbeb092b9053c77428b674b93e6305b1,
     type: 3}
   pressedMaterial: {fileID: 2100000, guid: 4acb926fdad02384bb73915b7191ba70, type: 2}
@@ -4735,7 +4462,7 @@ SpringJoint:
   m_ConnectedArticulationBody: {fileID: 0}
   m_Anchor: {x: 0, y: 0.49999237, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.0000000063108376, y: 0.029999873, z: 0.000599966}
+  m_ConnectedAnchor: {x: 0, y: 0.029999847, z: 0.00060001184}
   serializedVersion: 2
   m_Spring: 300
   m_Damper: 10
@@ -4762,14 +4489,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pressLength: 0.018
   pressed: 0
-  toggle: 1
+  toggle: 0
   downEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7242672151215771959}
-        m_TargetAssemblyTypeName: ScreenControl, Assembly-CSharp
-        m_MethodName: GoToSettingsScreen
-        m_Mode: 1
+      - m_Target: {fileID: 3970841446563053}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 8722250166587974984}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -5198,7 +4937,7 @@ SpringJoint:
   m_ConnectedArticulationBody: {fileID: 0}
   m_Anchor: {x: 0, y: 0.49999237, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.0000000063108376, y: 0.02999984, z: 0.000000018746217}
+  m_ConnectedAnchor: {x: -0.0000000063108376, y: 0.029999847, z: 0}
   serializedVersion: 2
   m_Spring: 300
   m_Damper: 10
@@ -5225,61 +4964,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pressLength: 0.018
   pressed: 0
-  toggle: 1
+  toggle: 0
   downEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 281322268}
-        m_TargetAssemblyTypeName: VRControlsManager, Assembly-CSharp
-        m_MethodName: SetMovementContinuous
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgumentAssemblyTypeName: 
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 9403323}
-        m_TargetAssemblyTypeName: UnityEngine.Renderer, UnityEngine
-        m_MethodName: set_material
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: -3033667219593020291, guid: cbeb092b9053c77428b674b93e6305b1,
-            type: 3}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Material, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1914759186}
-        m_TargetAssemblyTypeName: UnityEngine.Renderer, UnityEngine
-        m_MethodName: set_material
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 2100000, guid: 4acb926fdad02384bb73915b7191ba70,
-            type: 2}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Material, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 8539398723346614924}
-        m_TargetAssemblyTypeName: UnityEngine.Renderer, UnityEngine
-        m_MethodName: set_material
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: -3033667219593020291, guid: cbeb092b9053c77428b674b93e6305b1,
-            type: 3}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Material, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+        m_CallState: 0
   defaultMaterial: {fileID: -3033667219593020291, guid: cbeb092b9053c77428b674b93e6305b1,
     type: 3}
   pressedMaterial: {fileID: 2100000, guid: 4acb926fdad02384bb73915b7191ba70, type: 2}
@@ -5868,14 +5568,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pressLength: 0.018
   pressed: 0
-  toggle: 1
+  toggle: 0
   downEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7242672151215771959}
-        m_TargetAssemblyTypeName: ScreenControl, Assembly-CSharp
-        m_MethodName: GoToMainScreen
-        m_Mode: 1
+      - m_Target: {fileID: 3970841446563053}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -5883,6 +5583,18 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 8722250166587974984}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
         m_CallState: 2
   defaultMaterial: {fileID: -3033667219593020291, guid: cbeb092b9053c77428b674b93e6305b1,
     type: 3}
@@ -6042,7 +5754,7 @@ SpringJoint:
   m_ConnectedArticulationBody: {fileID: 0}
   m_Anchor: {x: 0, y: 0.49999237, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.000000047331284, y: 0.02999995, z: 0.0000000061914838}
+  m_ConnectedAnchor: {x: -1.9721368e-10, y: 0.029999845, z: 0.0000000024765936}
   serializedVersion: 2
   m_Spring: 300
   m_Damper: 10
@@ -6069,61 +5781,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pressLength: 0.018
   pressed: 0
-  toggle: 1
+  toggle: 0
   downEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 281322268}
-        m_TargetAssemblyTypeName: VRControlsManager, Assembly-CSharp
-        m_MethodName: SetMovementContinuous
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgumentAssemblyTypeName: 
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 9403323}
-        m_TargetAssemblyTypeName: UnityEngine.Renderer, UnityEngine
-        m_MethodName: set_material
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: -3033667219593020291, guid: cbeb092b9053c77428b674b93e6305b1,
-            type: 3}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Material, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 2079907143}
-        m_TargetAssemblyTypeName: UnityEngine.Renderer, UnityEngine
-        m_MethodName: set_material
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 2100000, guid: 4acb926fdad02384bb73915b7191ba70,
-            type: 2}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Material, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 8539398723346614924}
-        m_TargetAssemblyTypeName: UnityEngine.Renderer, UnityEngine
-        m_MethodName: set_material
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: -3033667219593020291, guid: cbeb092b9053c77428b674b93e6305b1,
-            type: 3}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Material, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+        m_CallState: 0
   defaultMaterial: {fileID: -3033667219593020291, guid: cbeb092b9053c77428b674b93e6305b1,
     type: 3}
   pressedMaterial: {fileID: 2100000, guid: 4acb926fdad02384bb73915b7191ba70, type: 2}
@@ -6282,7 +5955,7 @@ SpringJoint:
   m_ConnectedArticulationBody: {fileID: 0}
   m_Anchor: {x: 0, y: 0.49999237, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.00000013070077, y: 0.02999976, z: 0.0005999789}
+  m_ConnectedAnchor: {x: 0.000000010053905, y: 0.029999845, z: 0.0005999934}
   serializedVersion: 2
   m_Spring: 300
   m_Damper: 10
@@ -6309,61 +5982,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pressLength: 0.018
   pressed: 0
-  toggle: 1
+  toggle: 0
   downEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 281322268}
-        m_TargetAssemblyTypeName: VRControlsManager, Assembly-CSharp
-        m_MethodName: SetMovementContinuous
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgumentAssemblyTypeName: 
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 9403323}
-        m_TargetAssemblyTypeName: UnityEngine.Renderer, UnityEngine
-        m_MethodName: set_material
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: -3033667219593020291, guid: cbeb092b9053c77428b674b93e6305b1,
-            type: 3}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Material, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 2094847013}
-        m_TargetAssemblyTypeName: UnityEngine.Renderer, UnityEngine
-        m_MethodName: set_material
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 2100000, guid: 4acb926fdad02384bb73915b7191ba70,
-            type: 2}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Material, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 8539398723346614924}
-        m_TargetAssemblyTypeName: UnityEngine.Renderer, UnityEngine
-        m_MethodName: set_material
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: -3033667219593020291, guid: cbeb092b9053c77428b674b93e6305b1,
-            type: 3}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Material, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+        m_CallState: 0
   defaultMaterial: {fileID: -3033667219593020291, guid: cbeb092b9053c77428b674b93e6305b1,
     type: 3}
   pressedMaterial: {fileID: 2100000, guid: 4acb926fdad02384bb73915b7191ba70, type: 2}
@@ -6489,7 +6123,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &4997797593463316387
 Transform:
   m_ObjectHideFlags: 0
@@ -7664,7 +7298,6 @@ GameObject:
   - component: {fileID: 5485127027780620709}
   - component: {fileID: 6687827480537030938}
   - component: {fileID: 4937381322138870827}
-  - component: {fileID: 7242672151215771959}
   m_Layer: 0
   m_Name: Screen
   m_TagString: Untagged
@@ -7737,20 +7370,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &7242672151215771959
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7249605250885883868}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 710a1a645f41b5149a24b293916a98cc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  settingsScreen: {fileID: 0}
-  mainScreen: {fileID: 0}
 --- !u!1 &7636805550156992237
 GameObject:
   m_ObjectHideFlags: 0
@@ -7895,7 +7514,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &9016504810384233626
 Transform:
   m_ObjectHideFlags: 0

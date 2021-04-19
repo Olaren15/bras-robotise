@@ -7,6 +7,8 @@ TagManager:
   - Teleportation
   - Light
   - LightCube
+  - ButtonSettings
+  - ButtonMain
   layers:
   - Default
   - TransparentFX
