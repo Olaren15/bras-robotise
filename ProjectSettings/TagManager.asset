@@ -9,6 +9,7 @@ TagManager:
   - LightCube
   - ButtonSettings
   - ButtonMain
+  - Target
   layers:
   - Default
   - TransparentFX
