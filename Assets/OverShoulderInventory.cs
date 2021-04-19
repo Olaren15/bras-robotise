@@ -31,7 +31,7 @@ public class OverShoulderInventory : MonoBehaviour
                     {
                         storedItem = hand.currentAttachedObject;
                         hand.DetachObject(hand.currentAttachedObject);
-                        haptics.Execute(0, 0.15f, 150, 0.2f, hand.handType);
+                        haptics.Execute(0, 0.05f, 100, 1f, hand.handType);
                         storedItem.SetActive(false);
                     }
 
@@ -39,7 +39,7 @@ public class OverShoulderInventory : MonoBehaviour
                     {
                         storedItem.SetActive(true);
                         hand.AttachObject(storedItem, GrabTypes.Grip);
-                        haptics.Execute(0, 0.15f, 150, 0.2f, hand.handType);
+                        haptics.Execute(0, 0.05f, 100, 1f, hand.handType);
                         storedItem = null;
                     }
                 }
