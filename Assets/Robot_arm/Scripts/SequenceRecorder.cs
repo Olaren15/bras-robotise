@@ -58,7 +58,8 @@ public class SequenceRecorder : MonoBehaviour
 
     private void RemoveLastKeyPoint()
     {
-        sequence.RemoveAt(sequence.Count);
-        sequenceGameObjects.RemoveAt(sequenceGameObjects.Count);
+        sequence.RemoveAt(sequence.Count - 1);
+        Destroy(sequenceGameObjects[sequenceGameObjects.Count - 1]);
+        sequenceGameObjects.RemoveAt(sequenceGameObjects.Count - 1);
     }
 }

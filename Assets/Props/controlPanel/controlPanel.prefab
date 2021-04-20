@@ -3041,7 +3041,7 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 0
+        m_CallState: 2
   defaultMaterial: {fileID: -3033667219593020291, guid: cbeb092b9053c77428b674b93e6305b1,
     type: 3}
   pressedMaterial: {fileID: 2100000, guid: 4acb926fdad02384bb73915b7191ba70, type: 2}
