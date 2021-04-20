@@ -5,7 +5,7 @@ using Valve.VR.InteractionSystem;
 public class TargetRangeDetector : MonoBehaviour
 {
     public GameObject target;
-    private bool isInRange = true;
+    public bool isInRange = true;
     public SteamVR_Action_Vibration haptics;
     public float vibrationDuration = 1;
     private float timeUntilNextVibration;

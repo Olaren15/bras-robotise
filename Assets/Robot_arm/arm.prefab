@@ -285,6 +285,8 @@ MonoBehaviour:
   steamVRActionBoolean:
     actionPath: /actions/default/in/Trigger
     needsReinit: 0
+  range: {fileID: 1523070054}
+  rotationRange: {fileID: 1736288425}
   targetTransform: {fileID: 1077763288}
   targetRotationTransform: {fileID: 479041026}
 --- !u!1 &1077763287
@@ -536,6 +538,8 @@ MonoBehaviour:
   steamVRActionBoolean:
     actionPath: /actions/default/in/Trigger
     needsReinit: 0
+  range: {fileID: 1523070054}
+  rotationRange: {fileID: 1736288425}
   targetTransform: {fileID: 1077763288}
   targetRotationTransform: {fileID: 479041026}
 --- !u!1 &1674901931
@@ -868,6 +872,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 479041025}
+  isInRange: 1
   haptics:
     actionPath: /actions/default/out/Haptic
     needsReinit: 0
@@ -1180,6 +1185,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1077763287}
+  isInRange: 1
   haptics:
     actionPath: /actions/default/out/Haptic
     needsReinit: 0

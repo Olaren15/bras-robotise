@@ -7,6 +7,9 @@ using Valve.VR.InteractionSystem;
 public class OnHeldTarget : MonoBehaviour
 {
     public SteamVR_Action_Boolean steamVRActionBoolean;
+    public TargetRangeDetector range;
+    public TargetRangeDetector rotationRange;
+
     private Hand[] hands;
     private SequenceRecorder sequenceRecorder;
     public Transform targetTransform;
@@ -24,7 +27,10 @@ public class OnHeldTarget : MonoBehaviour
         {
             if (steamVRActionBoolean.GetStateDown(hand.handType))
             {
-                sequenceRecorder.SaveKeyPoint(targetTransform, targetRotationTransform);
+                if (range.isInRange && rotationRange.isInRange)
+                {
+                    sequenceRecorder.SaveKeyPoint(targetTransform, targetRotationTransform);
+                }
             }
         }
     }

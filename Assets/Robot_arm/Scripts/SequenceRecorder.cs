@@ -1,18 +1,15 @@
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using Robot_arm.Scripts;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class SequenceRecorder : MonoBehaviour
 {
     private bool recording;
     public GameObject keyPointPrefab;
     private List<KeyPoint> sequence = new List<KeyPoint>();
-
-    void Start()
-    {
-    }
+    private List<GameObject> sequenceGameObjects = new List<GameObject>();
 
     public void StartRecording()
     {
@@ -38,7 +35,9 @@ public class SequenceRecorder : MonoBehaviour
         {
             GameObject keyPoint = Instantiate(keyPointPrefab, targetTransform.position, Quaternion.identity);
             keyPoint.transform.Find("TargetRotation").transform.position = targetRotationTransform.position;
-            
+            keyPoint.transform.Find("Canvas").Find("Text").GetComponent<Text>().text = (sequence.Count + 1).ToString();
+
+            sequenceGameObjects.Add(keyPoint);
             AddKeyPointToSequence(targetTransform.position, targetRotationTransform.position);
         }
     }
@@ -60,5 +59,6 @@ public class SequenceRecorder : MonoBehaviour
     private void RemoveLastKeyPoint()
     {
         sequence.RemoveAt(sequence.Count);
+        sequenceGameObjects.RemoveAt(sequenceGameObjects.Count);
     }
 }
