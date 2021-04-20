@@ -50,7 +50,6 @@ public class customVRButton : MonoBehaviour
             if (!pressed)
             {
                 pressed = true;
-                print("THIS HAPPENED");
                 downEvent?.Invoke();
 
                 if (isToggleButton)

@@ -9,6 +9,8 @@ public class OnHeldTarget : MonoBehaviour
     public SteamVR_Action_Boolean steamVRActionBoolean;
     private Hand[] hands;
     private SequenceRecorder sequenceRecorder;
+    public Transform targetTransform;
+    public Transform targetRotationTransform;
 
     private void Start()
     {
@@ -22,10 +24,8 @@ public class OnHeldTarget : MonoBehaviour
         {
             if (steamVRActionBoolean.GetStateDown(hand.handType))
             {
-                sequenceRecorder.SaveKeyPoint(transform);
-                
+                sequenceRecorder.SaveKeyPoint(targetTransform, targetRotationTransform);
             }
-
         }
     }
 }

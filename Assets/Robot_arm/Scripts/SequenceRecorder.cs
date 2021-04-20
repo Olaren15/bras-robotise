@@ -32,14 +32,14 @@ public class SequenceRecorder : MonoBehaviour
         this.recording = recording;
     }
 
-    public void SaveKeyPoint(Transform targetTransform)
+    public void SaveKeyPoint(Transform targetTransform, Transform targetRotationTransform)
     {
         if (recording)
         {
             GameObject keyPoint = Instantiate(keyPointPrefab, targetTransform.position, Quaternion.identity);
-            Vector3 targetRotationPosition = targetTransform.transform.Find("TargetRotation").transform.position;
-            keyPoint.transform.Find("TargetRotation").transform.position = targetRotationPosition;
-            AddKeyPointToSequence(targetTransform.position, targetRotationPosition);
+            keyPoint.transform.Find("TargetRotation").transform.position = targetRotationTransform.position;
+            
+            AddKeyPointToSequence(targetTransform.position, targetRotationTransform.position);
         }
     }
 
