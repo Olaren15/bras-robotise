@@ -7651,10 +7651,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 129589024, guid: 2fc71119aed2f7a43b52d9aa05dd65c0, type: 3}
+      propertyPath: m_TagString
+      value: ButtonSettings
+      objectReference: {fileID: 0}
+    - target: {fileID: 355808892, guid: 2fc71119aed2f7a43b52d9aa05dd65c0, type: 3}
+      propertyPath: m_TagString
+      value: ButtonMain
+      objectReference: {fileID: 0}
+    - target: {fileID: 759689360, guid: 2fc71119aed2f7a43b52d9aa05dd65c0, type: 3}
+      propertyPath: m_TagString
+      value: ButtonMain
+      objectReference: {fileID: 0}
     - target: {fileID: 1068783664, guid: 2fc71119aed2f7a43b52d9aa05dd65c0, type: 3}
       propertyPath: downEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1028421529}
+    - target: {fileID: 1196791834, guid: 2fc71119aed2f7a43b52d9aa05dd65c0, type: 3}
+      propertyPath: m_TagString
+      value: ButtonSettings
+      objectReference: {fileID: 0}
+    - target: {fileID: 1315945126, guid: 2fc71119aed2f7a43b52d9aa05dd65c0, type: 3}
+      propertyPath: m_TagString
+      value: ButtonSettings
+      objectReference: {fileID: 0}
+    - target: {fileID: 3970841446563053, guid: 2fc71119aed2f7a43b52d9aa05dd65c0, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4823642050534973880, guid: 2fc71119aed2f7a43b52d9aa05dd65c0,
         type: 3}
       propertyPath: m_Name
