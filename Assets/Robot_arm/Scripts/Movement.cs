@@ -76,7 +76,7 @@ public class Movement : MonoBehaviour
         j2Base = GameObject.Find("j2base-rotation");
         j2Arm = GameObject.Find("j2arm-rotation");
         j3Housing = GameObject.Find("j3housing-rotation");
-        j4Arm = GameObject.Find("j4arm");
+        j4Arm = GameObject.Find("j4arm-rotation");
         j5Wrist = GameObject.Find("j5wrist-rotation");
         j6 = GameObject.Find("j6");
     }

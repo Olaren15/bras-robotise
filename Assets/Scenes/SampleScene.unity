@@ -415,6 +415,12 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 96311444}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &96324096 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 479041025, guid: 0f186a9e6c0e7a94da78a1f78e4f49b3,
+    type: 3}
+  m_PrefabInstance: {fileID: 4987535854704875751}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &158477322
 GameObject:
   m_ObjectHideFlags: 0
@@ -7651,6 +7657,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 345224458, guid: 2fc71119aed2f7a43b52d9aa05dd65c0, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 4987535854704875752}
+    - target: {fileID: 345224458, guid: 2fc71119aed2f7a43b52d9aa05dd65c0, type: 3}
+      propertyPath: targetRotation
+      value: 
+      objectReference: {fileID: 96324096}
     - target: {fileID: 1068783664, guid: 2fc71119aed2f7a43b52d9aa05dd65c0, type: 3}
       propertyPath: downEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -7871,6 +7885,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0f186a9e6c0e7a94da78a1f78e4f49b3, type: 3}
+--- !u!1 &4987535854704875752 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1077763287, guid: 0f186a9e6c0e7a94da78a1f78e4f49b3,
+    type: 3}
+  m_PrefabInstance: {fileID: 4987535854704875751}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6672177059394198676
 PrefabInstance:
   m_ObjectHideFlags: 0
