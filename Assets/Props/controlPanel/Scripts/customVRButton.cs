@@ -11,7 +11,9 @@ public class customVRButton : MonoBehaviour
 
     public float pressLength;
     public bool pressed;
-    public bool toggle;
+    public bool keepSameMaterial;
+    public bool isToggleButton;
+    private bool toggled;
     public ButtonEvent downEvent;
 
 
@@ -48,7 +50,14 @@ public class customVRButton : MonoBehaviour
             if (!pressed)
             {
                 pressed = true;
+                print("THIS HAPPENED");
                 downEvent?.Invoke();
+
+                if (isToggleButton)
+                {
+                    toggled = !toggled;
+                    meshRenderer.material = toggled ? pressedMaterial : defaultMaterial;
+                }
             }
         }
         else
@@ -56,20 +65,15 @@ public class customVRButton : MonoBehaviour
             pressed = false;
         }
 
-        if (originalPressed != pressed)
+        if (originalPressed != pressed && !isToggleButton)
         {
-            //meshRenderer.material = pressed ? pressedMaterial : defaultMaterial;
             if (pressed)
             {
                 meshRenderer.material = pressedMaterial;
             }
-            else
+            else if (!keepSameMaterial)
             {
-                if (!toggle)
-                {
-                    meshRenderer.material = defaultMaterial;
-
-                }
+                meshRenderer.material = defaultMaterial;
             }
         }
 

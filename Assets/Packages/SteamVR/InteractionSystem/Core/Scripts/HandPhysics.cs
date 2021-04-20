@@ -97,7 +97,7 @@ namespace Valve.VR.InteractionSystem
             }
             else
             {
-                // wait for area to become clear before reenabling collisions
+                /*// wait for area to become clear before reenabling collisions
                 if (!collisionsEnabled)
                 {
                     clearanceBuffer[0] = null;
@@ -108,7 +108,8 @@ namespace Valve.VR.InteractionSystem
                     {
                         collisionsEnabled = true;
                     }
-                }
+                }*/
+                collisionsEnabled = true;
             }
 
             handCollider.SetCollisionDetectionEnabled(collisionsEnabled);

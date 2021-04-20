@@ -5,7 +5,7 @@
       "app_key": "application.generated.unity.brasrobotise.exe",
       "launch_type": "url",
       "url": "steam://launch/",
-      "action_manifest_path": "D:\\cathe\\code\\bras-robotise\\Assets\\StreamingAssets\\SteamVR\\actions.json",
+      "action_manifest_path": "C:\\Users\\patmo\\Desktop\\projet_final\\Assets\\StreamingAssets\\SteamVR\\actions.json",
       "strings": {
         "en_us": {
           "name": "bras-robotise [Testing]"

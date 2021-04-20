@@ -3746,6 +3746,51 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1c0f9e4b4b43ee44b4ea25ac9fee77d, type: 3}
+--- !u!1 &1028421528
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1028421530}
+  - component: {fileID: 1028421529}
+  m_Layer: 0
+  m_Name: SequenceRecorder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1028421529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1028421528}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b54f9622f89586b4486e2b390a8e8a80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  keyPointPrefab: {fileID: 9122985926525011277, guid: e66224678668c014b9257083769699d6,
+    type: 3}
+--- !u!4 &1028421530
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1028421528}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1084309071 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 475244, guid: 7a135b1a2cb9c8f488d4dd00c55ab283,
@@ -7606,6 +7651,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1068783664, guid: 2fc71119aed2f7a43b52d9aa05dd65c0, type: 3}
+      propertyPath: downEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1028421529}
     - target: {fileID: 4823642050534973880, guid: 2fc71119aed2f7a43b52d9aa05dd65c0,
         type: 3}
       propertyPath: m_Name
@@ -7679,6 +7728,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: LightSwitch
+      objectReference: {fileID: 0}
+    - target: {fileID: 2144113855157136299, guid: 02fd0d9367505d246809efc9ec787968,
+        type: 3}
+      propertyPath: keepSameMaterial
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5213200499510531071, guid: 02fd0d9367505d246809efc9ec787968,
+        type: 3}
+      propertyPath: keepSameMaterial
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7617689801115153807, guid: 02fd0d9367505d246809efc9ec787968,
         type: 3}
