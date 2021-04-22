@@ -8,7 +8,7 @@ using UnityEngine.UI;
 
 public class SequenceRecorder : MonoBehaviour
 {
-    private bool recording;
+    public bool recording { get; private set; }
     public GameObject keyPointPrefab;
     private List<KeyPoint> sequence = new List<KeyPoint>();
     private List<GameObject> sequenceGameObjects = new List<GameObject>();

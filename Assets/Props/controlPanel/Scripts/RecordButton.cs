@@ -6,24 +6,30 @@ public class RecordButton : MonoBehaviour
 {
     private bool active;
     private SequenceRecorder sequenceRecorder;
+    private SequencePlayer sequencePlayer;
+    private SequenceList sequenceList;
 
-    void Start()
+    private void Start()
     {
         sequenceRecorder = FindObjectOfType<SequenceRecorder>();
-
+        sequencePlayer = FindObjectOfType<SequencePlayer>();
+        sequenceList = FindObjectOfType<SequenceList>();
     }
 
     public void ToggleRecord()
     {
         if (active)
         {
-            sequenceRecorder.StopRecording();
+            sequenceList.currentSequence = sequenceRecorder.StopRecording();
         }
         else
         {
-            sequenceRecorder.StartRecording();
+            if (!sequencePlayer.playing)
+            {
+                sequenceRecorder.StartRecording();
+            }
         }
-        active = !active;
 
+        active = !active;
     }
 }
