@@ -1073,7 +1073,7 @@ MonoBehaviour:
   defaultLocalRotation: {x: -0, y: -0, z: -0, w: 1}
   useLimits: 1
   min: -80
-  max: 130
+  max: 75
   zeroAxisDisplayOffset: 0
 --- !u!1 &7796822261235416315
 GameObject:
