@@ -16,11 +16,11 @@ public class SequencePlayer : MonoBehaviour
 
     public void Play(List<KeyPoint> sequenceToPlay)
     {
-        playing = true;
         sequence = sequenceToPlay;
 
         if (sequence.Count >= 1)
         {
+            playing = true;
             target.transform.position = sequence[0].TargetPosition;
             targetRotation.transform.position = sequence[0].TargetRotationPosition;
             targetRotation.transform.rotation = Quaternion.identity;
