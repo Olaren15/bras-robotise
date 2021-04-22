@@ -40,18 +40,29 @@ public class SequencePlayer : MonoBehaviour
             if (target.transform.position != sequence[nextSequenceIndex].TargetPosition
                 || targetRotation.transform.position != sequence[nextSequenceIndex].TargetRotationPosition)
             {
-                target.transform.position = Vector3.MoveTowards(target.transform.position,
-                    sequence[nextSequenceIndex].TargetPosition, speed * Time.deltaTime);
-
                 float distance =
                     Vector3.Distance(target.transform.position, sequence[nextSequenceIndex].TargetPosition);
                 float distanceRotation = Vector3.Distance(targetRotation.transform.position,
                     sequence[nextSequenceIndex].TargetRotationPosition);
 
-                float ratio = distanceRotation / distance;
+                float ratio;
+                float ratioRotation;
+                if (distance > distanceRotation)
+                {
+                    ratio = 1.0f;
+                    ratioRotation = distanceRotation / distance;
+                }
+                else
+                {
+                    ratio = distance / distanceRotation;
+                    ratioRotation = 1.0f;
+                }
+
+                target.transform.position = Vector3.MoveTowards(target.transform.position,
+                    sequence[nextSequenceIndex].TargetPosition, speed * ratio * Time.deltaTime);
 
                 targetRotation.transform.position = Vector3.MoveTowards(targetRotation.transform.position,
-                    sequence[nextSequenceIndex].TargetRotationPosition, speed * ratio * Time.deltaTime);
+                    sequence[nextSequenceIndex].TargetRotationPosition, speed * ratioRotation * Time.deltaTime);
             }
             else if (sequence.Count > nextSequenceIndex + 1)
             {
