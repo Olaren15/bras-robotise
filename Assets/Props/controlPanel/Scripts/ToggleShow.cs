@@ -38,7 +38,7 @@ public class ToggleShow : MonoBehaviour
             PositionLocalConstraints localConstraints = button.GetComponent<PositionLocalConstraints>();
             if (localConstraints)
             {
-                localConstraints.freezeY = enable;
+                localConstraints.freezeY = true;
             }
 
             button.GetComponent<MeshRenderer>().enabled = enable;
