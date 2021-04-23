@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using Robot_arm.Scripts;
 using UnityEngine;
+using Valve.VR.InteractionSystem;
 
 public class SequencePlayer : MonoBehaviour
 {
@@ -12,7 +13,7 @@ public class SequencePlayer : MonoBehaviour
     public GameObject target;
     public GameObject targetRotation;
 
-    public float speed { get; set; } = 0.3f;
+    public float speed = 0.3f;
 
     public void Play(List<KeyPoint> sequenceToPlay)
     {
@@ -25,6 +26,9 @@ public class SequencePlayer : MonoBehaviour
             targetRotation.transform.position = sequence[0].TargetRotationPosition;
             targetRotation.transform.rotation = Quaternion.identity;
             targetRotation.transform.parent = target.transform.parent;
+
+            target.AddComponent<IgnoreHovering>();
+            targetRotation.AddComponent<IgnoreHovering>();
 
             if (sequence.Count >= 2)
             {
@@ -73,6 +77,9 @@ public class SequencePlayer : MonoBehaviour
                 playing = false;
                 nextSequenceIndex = 0;
                 targetRotation.transform.parent = target.transform;
+
+                Destroy(target.GetComponent<IgnoreHovering>());
+                Destroy(targetRotation.GetComponent<IgnoreHovering>());
             }
         }
     }
