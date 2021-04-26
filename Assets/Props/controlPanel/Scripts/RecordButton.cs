@@ -8,12 +8,17 @@ public class RecordButton : MonoBehaviour
     private SequenceRecorder sequenceRecorder;
     private SequencePlayer sequencePlayer;
     private SequenceList sequenceList;
+    private MeshRenderer meshRenderer;
+
+    public Material defaultMaterial;
+    public Material pressedMaterial;
 
     private void Start()
     {
         sequenceRecorder = FindObjectOfType<SequenceRecorder>();
         sequencePlayer = FindObjectOfType<SequencePlayer>();
         sequenceList = FindObjectOfType<SequenceList>();
+        meshRenderer = GetComponent<MeshRenderer>();
     }
 
     public void ToggleRecord()
@@ -21,15 +26,14 @@ public class RecordButton : MonoBehaviour
         if (active)
         {
             sequenceList.currentSequence = sequenceRecorder.StopRecording();
+            active = !active;
         }
-        else
+        else if (!sequencePlayer.playing)
         {
-            if (!sequencePlayer.playing)
-            {
-                sequenceRecorder.StartRecording();
-            }
+            sequenceRecorder.StartRecording();
+            active = !active;
         }
 
-        active = !active;
+        meshRenderer.material = active ? pressedMaterial : defaultMaterial;
     }
 }

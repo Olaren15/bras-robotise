@@ -15,7 +15,7 @@ public class FixHandCollision : MonoBehaviour
         Physics.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("button"), false);
     }
 
-    private void OnEnable()
+    private void OnDisable()
     {
         Physics.IgnoreLayerCollision(LayerMask.NameToLayer("Player"), LayerMask.NameToLayer("button"), false);
     }

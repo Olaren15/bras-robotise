@@ -2,9 +2,9 @@ using System;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class customVRButton : MonoBehaviour
+public class CustomVRButton : MonoBehaviour
 {
-    [System.Serializable]
+    [Serializable]
     public class ButtonEvent : UnityEvent
     {
     }
@@ -12,25 +12,20 @@ public class customVRButton : MonoBehaviour
     public float pressLength;
     public bool pressed;
     public bool keepSameMaterial;
-    public bool isToggleButton;
-    private bool toggled;
+    public bool ignoreMaterialChange;
     public ButtonEvent downEvent;
-
 
     public Material defaultMaterial;
     public Material pressedMaterial;
     private MeshRenderer meshRenderer;
 
     private Vector3 startPos;
-
-    private SpringJoint springJoint;
     private PositionLocalConstraints localConstraints;
 
     private void Start()
     {
         startPos = transform.localPosition;
         meshRenderer = GetComponent<MeshRenderer>();
-        springJoint = GetComponent<SpringJoint>();
         localConstraints = GetComponent<PositionLocalConstraints>();
     }
 
@@ -51,12 +46,6 @@ public class customVRButton : MonoBehaviour
             {
                 pressed = true;
                 downEvent?.Invoke();
-
-                if (isToggleButton)
-                {
-                    toggled = !toggled;
-                    meshRenderer.material = toggled ? pressedMaterial : defaultMaterial;
-                }
             }
         }
         else
@@ -64,7 +53,7 @@ public class customVRButton : MonoBehaviour
             pressed = false;
         }
 
-        if (originalPressed != pressed && !isToggleButton)
+        if (originalPressed != pressed && !ignoreMaterialChange)
         {
             if (pressed)
             {

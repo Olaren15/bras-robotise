@@ -204,7 +204,7 @@ MonoBehaviour:
   pressLength: 0.018
   pressed: 0
   keepSameMaterial: 1
-  isToggleButton: 0
+  ignoreMaterialChange: 0
   downEvent:
     m_PersistentCalls:
       m_Calls:
@@ -785,7 +785,7 @@ MonoBehaviour:
   pressLength: 0.018
   pressed: 0
   keepSameMaterial: 0
-  isToggleButton: 0
+  ignoreMaterialChange: 0
   downEvent:
     m_PersistentCalls:
       m_Calls:
@@ -859,7 +859,7 @@ Transform:
   m_GameObject: {fileID: 355808892}
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: -0.0000005078252, y: 0.5300029, z: 0.00000035149156}
-  m_LocalScale: {x: 0.0500787, y: 1, z: 0.1}
+  m_LocalScale: {x: 0.0500787, y: 1, z: 0.11891001}
   m_Children: []
   m_Father: {fileID: 2079907136}
   m_RootOrder: 0
@@ -1585,7 +1585,7 @@ MonoBehaviour:
   pressLength: 0.018
   pressed: 0
   keepSameMaterial: 0
-  isToggleButton: 0
+  ignoreMaterialChange: 0
   downEvent:
     m_PersistentCalls:
       m_Calls:
@@ -1802,7 +1802,7 @@ MonoBehaviour:
   pressLength: 0.018
   pressed: 0
   keepSameMaterial: 0
-  isToggleButton: 0
+  ignoreMaterialChange: 0
   downEvent:
     m_PersistentCalls:
       m_Calls:
@@ -1973,7 +1973,7 @@ Transform:
   m_GameObject: {fileID: 759689360}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0, y: 0.534, z: 0}
-  m_LocalScale: {x: 0.097765, y: 1, z: 0.048632223}
+  m_LocalScale: {x: 0.087186836, y: 0.89180005, z: 0.043370217}
   m_Children: []
   m_Father: {fileID: 1914759179}
   m_RootOrder: 0
@@ -2387,7 +2387,7 @@ Transform:
   m_GameObject: {fileID: 861697988}
   m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0.50999725, z: -0.008000511}
-  m_LocalScale: {x: 0.086, y: 0.086, z: 0.085999995}
+  m_LocalScale: {x: 0.0792232, y: 0.0792232, z: 0.0792232}
   m_Children: []
   m_Father: {fileID: 1485219907}
   m_RootOrder: 0
@@ -2678,7 +2678,7 @@ MonoBehaviour:
   pressLength: 0.018
   pressed: 0
   keepSameMaterial: 0
-  isToggleButton: 0
+  ignoreMaterialChange: 0
   downEvent:
     m_PersistentCalls:
       m_Calls:
@@ -3464,7 +3464,7 @@ MonoBehaviour:
   pressLength: 0.018
   pressed: 0
   keepSameMaterial: 0
-  isToggleButton: 0
+  ignoreMaterialChange: 0
   downEvent:
     m_PersistentCalls:
       m_Calls:
@@ -4039,7 +4039,7 @@ MonoBehaviour:
   pressLength: 0.018
   pressed: 0
   keepSameMaterial: 0
-  isToggleButton: 0
+  ignoreMaterialChange: 0
   downEvent:
     m_PersistentCalls:
       m_Calls:
@@ -4457,7 +4457,7 @@ Transform:
   m_GameObject: {fileID: 1340317212}
   m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0.51, z: -0.008000511}
-  m_LocalScale: {x: 0.085999995, y: 0.086, z: 0.085999995}
+  m_LocalScale: {x: 0.075679995, y: 0.07568, z: 0.075679995}
   m_Children: []
   m_Father: {fileID: 1068783661}
   m_RootOrder: 0
@@ -4757,7 +4757,7 @@ MonoBehaviour:
   pressLength: 0.018
   pressed: 0
   keepSameMaterial: 0
-  isToggleButton: 0
+  ignoreMaterialChange: 0
   downEvent:
     m_PersistentCalls:
       m_Calls:
@@ -5261,7 +5261,7 @@ MonoBehaviour:
   pressLength: 0.018
   pressed: 0
   keepSameMaterial: 0
-  isToggleButton: 0
+  ignoreMaterialChange: 0
   downEvent:
     m_PersistentCalls:
       m_Calls:
@@ -5727,7 +5727,7 @@ MonoBehaviour:
   pressLength: 0.018
   pressed: 0
   keepSameMaterial: 0
-  isToggleButton: 1
+  ignoreMaterialChange: 1
   downEvent:
     m_PersistentCalls:
       m_Calls:
@@ -5786,6 +5786,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fbf25ea875e5ab438b7ce224ec446af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  defaultMaterial: {fileID: -3033667219593020291, guid: cbeb092b9053c77428b674b93e6305b1,
+    type: 3}
+  pressedMaterial: {fileID: 2100000, guid: 4119980e7861ba74f9bbdab18a540cd5, type: 2}
 --- !u!1 &1917696037
 GameObject:
   m_ObjectHideFlags: 0
@@ -6344,7 +6347,7 @@ MonoBehaviour:
   pressLength: 0.018
   pressed: 0
   keepSameMaterial: 0
-  isToggleButton: 0
+  ignoreMaterialChange: 0
   downEvent:
     m_PersistentCalls:
       m_Calls:
@@ -6548,7 +6551,7 @@ MonoBehaviour:
   pressLength: 0.018
   pressed: 0
   keepSameMaterial: 0
-  isToggleButton: 0
+  ignoreMaterialChange: 0
   downEvent:
     m_PersistentCalls:
       m_Calls:
@@ -6763,7 +6766,7 @@ MonoBehaviour:
   pressLength: 0.018
   pressed: 0
   keepSameMaterial: 0
-  isToggleButton: 0
+  ignoreMaterialChange: 0
   downEvent:
     m_PersistentCalls:
       m_Calls:
@@ -7197,7 +7200,7 @@ Transform:
   m_GameObject: {fileID: 2745969071083459734}
   m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
   m_LocalPosition: {x: -0.001, y: 0.51, z: -0.008}
-  m_LocalScale: {x: 0.086, y: 0.085999995, z: 0.086}
+  m_LocalScale: {x: 0.078260005, y: 0.07826, z: 0.078260005}
   m_Children: []
   m_Father: {fileID: 1728420272}
   m_RootOrder: 0
@@ -7686,7 +7689,7 @@ MonoBehaviour:
   pressLength: 0.018
   pressed: 0
   keepSameMaterial: 1
-  isToggleButton: 0
+  ignoreMaterialChange: 0
   downEvent:
     m_PersistentCalls:
       m_Calls:
@@ -7928,7 +7931,7 @@ MonoBehaviour:
   pressLength: 0.018
   pressed: 0
   keepSameMaterial: 1
-  isToggleButton: 0
+  ignoreMaterialChange: 0
   downEvent:
     m_PersistentCalls:
       m_Calls:
