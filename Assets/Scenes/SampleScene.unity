@@ -3812,6 +3812,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 4987535854704875752}
   targetRotation: {fileID: 96324096}
+  speed: 0.3
 --- !u!4 &1084309071 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 475244, guid: 7a135b1a2cb9c8f488d4dd00c55ab283,
