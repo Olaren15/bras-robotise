@@ -433,7 +433,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc3732457b0331744a65e118c6c12f1f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  confetti: {fileID: 4666808864603048345, guid: 0d0491901cf2b6844b1c52d75956b4a2,
+  confetti: {fileID: 6969110612089528759, guid: 0d0491901cf2b6844b1c52d75956b4a2,
     type: 3}
 --- !u!1 &3068795700162591234
 GameObject:

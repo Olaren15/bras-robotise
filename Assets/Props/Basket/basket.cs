@@ -1,12 +1,11 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class basket : MonoBehaviour
 {
-    public ParticleSystem confetti;
+    public GameObject confetti;
+
     private void OnTriggerEnter(Collider other)
     {
-        Instantiate(confetti, GameObject.Find("ConfettiSpawner").transform.position, Quaternion.Euler(90, 0,0));
+        Instantiate(confetti, GameObject.Find("ConfettiSpawner").transform.position, Quaternion.Euler(90, 0, 0));
     }
 }
