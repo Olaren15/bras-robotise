@@ -25,7 +25,7 @@ public class RecordButton : MonoBehaviour
     {
         if (active)
         {
-            sequenceList.currentSequence = sequenceRecorder.StopRecording();
+            sequenceList.AddSequence(sequenceRecorder.StopRecording());
             active = !active;
         }
         else if (!sequencePlayer.playing)

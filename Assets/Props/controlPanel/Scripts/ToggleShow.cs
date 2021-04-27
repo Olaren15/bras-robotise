@@ -6,6 +6,8 @@ public class ToggleShow : MonoBehaviour
     private GameObject[] mainScreenButtons;
     private GameObject[] settingsScreenButtons;
 
+    public GameObject sequenceListCanvas;
+
     public void Start()
     {
         settingsScreenButtons = GameObject.FindGameObjectsWithTag("ButtonSettings");
@@ -17,12 +19,14 @@ public class ToggleShow : MonoBehaviour
     {
         ToggleButtons(mainScreenButtons, false);
         ToggleButtons(settingsScreenButtons, true);
+        sequenceListCanvas.SetActive(false);
     }
 
     public void GoToMain()
     {
         ToggleButtons(settingsScreenButtons, false);
         ToggleButtons(mainScreenButtons, true);
+        sequenceListCanvas.SetActive(true);
     }
 
     private static void ToggleButtons(IEnumerable<GameObject> buttons, bool enable)
