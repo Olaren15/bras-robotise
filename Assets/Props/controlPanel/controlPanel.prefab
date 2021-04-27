@@ -2683,6 +2683,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a54bac1da5db1f4586dbe9654890176, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  keyPointPrefab: {fileID: 9122985926525011277, guid: e66224678668c014b9257083769699d6,
+    type: 3}
   panels:
   - {fileID: 1772596178}
   - {fileID: 942200144}

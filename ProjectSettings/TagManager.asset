@@ -10,6 +10,7 @@ TagManager:
   - ButtonSettings
   - ButtonMain
   - Target
+  - Keypoint
   layers:
   - Default
   - TransparentFX

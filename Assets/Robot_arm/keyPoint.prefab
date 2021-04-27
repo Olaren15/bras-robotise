@@ -205,7 +205,7 @@ GameObject:
   - component: {fileID: 1311622989500671027}
   m_Layer: 10
   m_Name: TargetRotation
-  m_TagString: Target
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -286,7 +286,7 @@ GameObject:
   - component: {fileID: 1951492353585097332}
   m_Layer: 10
   m_Name: keyPoint
-  m_TagString: Target
+  m_TagString: Keypoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

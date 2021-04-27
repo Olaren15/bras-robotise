@@ -15,9 +15,9 @@ public class SequenceRecorder : MonoBehaviour
     {
         SetRecording(true);
 
-        foreach (GameObject gameObject in sequenceGameObjects)
+        foreach (var keypoint in GameObject.FindGameObjectsWithTag("Keypoint"))
         {
-            Destroy(gameObject);
+            Destroy(keypoint);
         }
 
         sequenceGameObjects.Clear();
