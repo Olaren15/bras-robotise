@@ -61,15 +61,17 @@ public class SequenceList : MonoBehaviour
             }
         }
 
+
+        //remove present keypoints
+        foreach (var keypoint in GameObject.FindGameObjectsWithTag("Keypoint"))
+        {
+            Destroy(keypoint);
+        }
+
         if (currentSequence != null)
         {
             InstantiateKeyPoints();
         }
-
-        print($"Index: {index}");
-        print($"Shown index: {shownIndex}");
-        print($"Sequences count: {sequences.Count}");
-        print($"Shown sequences count: {shownSequences.Count}");
     }
 
     public void AddSequence(Sequence sequence)
@@ -86,11 +88,7 @@ public class SequenceList : MonoBehaviour
         sequences.Add(sequence);
         index = sequences.Count - 1;
 
-        BinaryFormatter binaryFormatter = new BinaryFormatter();
-        FileStream file = File.Open(Application.persistentDataPath + "/sequences.dat", FileMode.Create);
-        binaryFormatter.Serialize(file, sequences);
-        file.Close();
-
+        SaveSequences();
 
         if (sequences.Count < 6)
         {
@@ -114,6 +112,60 @@ public class SequenceList : MonoBehaviour
             }
 
             shownIndex = 5;
+        }
+
+        UpdateUi();
+    }
+
+    public void DeleteSelectedSequence()
+    {
+        if (sequences.Count > 0)
+        {
+            sequences.RemoveAt(index);
+            shownSequences.RemoveAt(shownIndex);
+
+            //overwrite sequences
+            SaveSequences();
+
+            if (shownSequences.Count == 5)
+            {
+                int nextSequenceIndex = index + 5 - shownIndex;
+                int previousSequenceIndex = index - shownIndex - 1;
+
+                //Ajoute une séquence par en bas
+                if (sequences.Count > nextSequenceIndex)
+                {
+                    shownSequences.Add(sequences[nextSequenceIndex]);
+                }
+                //Si il n'y a pas de séquence plus bas, on ajoute une séquence par en haut
+                else if (previousSequenceIndex >= 0)
+                {
+                    shownSequences.Insert(0, sequences[previousSequenceIndex]);
+                    if (index > 0)
+                    {
+                        index--;
+                    }
+                }
+                //si il n'y a pas de séquence en bas ET en haut
+                else
+                {
+                    //si on est sur la dernière séquence, on remonte
+                    if (index == sequences.Count)
+                    {
+                        index--;
+                        shownIndex--;
+                    }
+                }
+            }
+            else if (shownIndex > 0)
+            {
+                //si on est sur la dernière séquence, on remonte
+                if (index == sequences.Count)
+                {
+                    index--;
+                    shownIndex--;
+                }
+            }
         }
 
         UpdateUi();
@@ -174,12 +226,6 @@ public class SequenceList : MonoBehaviour
 
     private void InstantiateKeyPoints()
     {
-        //remove present keypoints
-        foreach (var keypoint in GameObject.FindGameObjectsWithTag("Keypoint"))
-        {
-            Destroy(keypoint);
-        }
-
         //add keypoint for the new current sequence
         for (var i = 0; i < currentSequence.keyPoints.Count; i++)
         {
@@ -191,56 +237,11 @@ public class SequenceList : MonoBehaviour
         }
     }
 
-    public void DeleteSelectedSequence()
+    private void SaveSequences()
     {
-        if (sequences.Count > 0)
-        {
-            sequences.RemoveAt(index);
-            
-            BinaryFormatter binaryFormatter = new BinaryFormatter();
-            FileStream file = File.Open(Application.persistentDataPath + "/sequences.dat", FileMode.Create);
-            binaryFormatter.Serialize(file, sequences);
-            file.Close();
-
-            shownSequences.RemoveAt(shownIndex);
-
-            if (shownSequences.Count == 5)
-            {
-                int nextSequenceIndex = index + 5 - shownIndex;
-                int previousSequenceIndex = index - shownIndex - 1;
-
-                // Il y a des séquences plus bas que les shownSequences
-                if (sequences.Count > nextSequenceIndex)
-                {
-                    shownSequences.Add(sequences[nextSequenceIndex]);
-                }
-                else if (previousSequenceIndex >= 0)
-                {
-                    shownSequences.Insert(0, sequences[previousSequenceIndex]);
-                    if (index > 0)
-                    {
-                        index--;
-                    }
-                }
-                else
-                {
-                    if (index == sequences.Count)
-                    {
-                        index--;
-                        shownIndex--;
-                    }
-                }
-            }
-            else if (shownIndex > 0)
-            {
-                if (index == sequences.Count)
-                {
-                    index--;
-                    shownIndex--;
-                }
-            }
-        }
-
-        UpdateUi();
+        BinaryFormatter binaryFormatter = new BinaryFormatter();
+        FileStream file = File.Open(Application.persistentDataPath + "/sequences.dat", FileMode.Create);
+        binaryFormatter.Serialize(file, sequences);
+        file.Close();
     }
 }
