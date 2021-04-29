@@ -17,7 +17,7 @@ public class SequenceList : MonoBehaviour
     private List<Sequence> shownSequences = new List<Sequence>();
     private int shownIndex;
 
-    public Sequence currentSequence => sequences[index];
+    public Sequence currentSequence => sequences.Count > index ? sequences[index] : null;
 
     public List<GameObject> panels;
 
@@ -47,7 +47,6 @@ public class SequenceList : MonoBehaviour
     {
         for (int i = 0; i < shownSequences.Count && i < panels.Count; i++)
         {
-            print(i);
             panels[i].SetActive(true);
 
             panels[i].GetComponent<Image>().color = i == shownIndex ? new Color(0.5f, 1.0f, 0.0f) : Color.white;
@@ -93,17 +92,27 @@ public class SequenceList : MonoBehaviour
         file.Close();
 
 
-        if (shownSequences.Count < 6)
+        if (sequences.Count < 6)
         {
-            shownSequences.Add(sequences[index]);
-            if (shownSequences.Count > 1)
+            shownSequences.Add(currentSequence);
+
+            if (shownSequences.Count > 0)
             {
-                shownIndex++;
+                shownIndex = shownSequences.Count - 1;
+            }
+            else
+            {
+                shownIndex = 0;
             }
         }
         else
         {
-            shownSequences = sequences.GetRange(sequences.Count - 7, 6);
+            shownSequences.Clear();
+            for (int i = sequences.Count - 6; i < sequences.Count; i++)
+            {
+                shownSequences.Add(sequences[i]);
+            }
+
             shownIndex = 5;
         }
 
@@ -187,10 +196,11 @@ public class SequenceList : MonoBehaviour
         if (sequences.Count > 0)
         {
             sequences.RemoveAt(index);
-            // BinaryFormatter binaryFormatter = new BinaryFormatter();
-            // FileStream file = File.Open(Application.persistentDataPath + "/sequences.dat", FileMode.Create);
-            // binaryFormatter.Serialize(file, sequences);
-            // file.Close();
+            
+            BinaryFormatter binaryFormatter = new BinaryFormatter();
+            FileStream file = File.Open(Application.persistentDataPath + "/sequences.dat", FileMode.Create);
+            binaryFormatter.Serialize(file, sequences);
+            file.Close();
 
             shownSequences.RemoveAt(shownIndex);
 
@@ -200,23 +210,34 @@ public class SequenceList : MonoBehaviour
                 int previousSequenceIndex = index - shownIndex - 1;
 
                 // Il y a des séquences plus bas que les shownSequences
-                if (sequences.Count >= nextSequenceIndex)
+                if (sequences.Count > nextSequenceIndex)
                 {
                     shownSequences.Add(sequences[nextSequenceIndex]);
                 }
                 else if (previousSequenceIndex >= 0)
                 {
                     shownSequences.Insert(0, sequences[previousSequenceIndex]);
-                    if (shownIndex > 0)
+                    if (index > 0)
                     {
+                        index--;
+                    }
+                }
+                else
+                {
+                    if (index == sequences.Count)
+                    {
+                        index--;
                         shownIndex--;
                     }
                 }
             }
             else if (shownIndex > 0)
             {
-                index--;
-                shownIndex--;
+                if (index == sequences.Count)
+                {
+                    index--;
+                    shownIndex--;
+                }
             }
         }
 
