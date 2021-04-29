@@ -7571,6 +7571,26 @@ PrefabInstance:
       propertyPath: downEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1028421529}
+    - target: {fileID: 1485219910, guid: 2fc71119aed2f7a43b52d9aa05dd65c0, type: 3}
+      propertyPath: downEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 3943235535404401987}
+    - target: {fileID: 1485219910, guid: 2fc71119aed2f7a43b52d9aa05dd65c0, type: 3}
+      propertyPath: downEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1485219910, guid: 2fc71119aed2f7a43b52d9aa05dd65c0, type: 3}
+      propertyPath: downEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Delete
+      objectReference: {fileID: 0}
+    - target: {fileID: 1485219910, guid: 2fc71119aed2f7a43b52d9aa05dd65c0, type: 3}
+      propertyPath: downEvent.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Props.controlPanel.Scripts.DeleteButton, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1485219910, guid: 2fc71119aed2f7a43b52d9aa05dd65c0, type: 3}
+      propertyPath: downEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 4823642050534973880, guid: 2fc71119aed2f7a43b52d9aa05dd65c0,
         type: 3}
       propertyPath: m_Name
@@ -7633,6 +7653,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2fc71119aed2f7a43b52d9aa05dd65c0, type: 3}
+--- !u!1 &3943235535404401986 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1485219906, guid: 2fc71119aed2f7a43b52d9aa05dd65c0,
+    type: 3}
+  m_PrefabInstance: {fileID: 3943235535404401985}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3943235535404401987
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3943235535404401986}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea99ae4cf8bc49d2a7fa2bc25b056d6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &4291339001880221639
 PrefabInstance:
   m_ObjectHideFlags: 0

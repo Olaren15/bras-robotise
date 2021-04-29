@@ -41,26 +41,49 @@ public class SequenceList : MonoBehaviour
         }
 
         UpdateUi();
-        if (currentSequence != null)
-        {
-            InstantiateKeyPoints();
-        }
     }
 
     private void UpdateUi()
     {
         for (int i = 0; i < shownSequences.Count && i < panels.Count; i++)
         {
+            print(i);
             panels[i].SetActive(true);
 
             panels[i].GetComponent<Image>().color = i == shownIndex ? new Color(0.5f, 1.0f, 0.0f) : Color.white;
             panels[i].GetComponentInChildren<Text>().text = $"Sequence {shownSequences[i].id}";
         }
+
+        if (shownSequences.Count < panels.Count)
+        {
+            for (int i = shownSequences.Count; i < panels.Count; i++)
+            {
+                panels[i].SetActive(false);
+            }
+        }
+
+        if (currentSequence != null)
+        {
+            InstantiateKeyPoints();
+        }
+
+        print($"Index: {index}");
+        print($"Shown index: {shownIndex}");
+        print($"Sequences count: {sequences.Count}");
+        print($"Shown sequences count: {shownSequences.Count}");
     }
 
     public void AddSequence(Sequence sequence)
     {
-        sequence.id = sequences.Count + 1;
+        if (sequences.Count == 0)
+        {
+            sequence.id = 1;
+        }
+        else
+        {
+            sequence.id = sequences[sequences.Count - 1].id + 1;
+        }
+
         sequences.Add(sequence);
         index = sequences.Count - 1;
 
@@ -81,7 +104,6 @@ public class SequenceList : MonoBehaviour
         else
         {
             shownSequences = sequences.GetRange(sequences.Count - 7, 6);
-            //ScrollDown();
             shownIndex = 5;
         }
 
@@ -97,7 +119,6 @@ public class SequenceList : MonoBehaviour
                 index--;
                 ScrollUp();
                 UpdateUi();
-                InstantiateKeyPoints();
             }
         }
     }
@@ -111,7 +132,6 @@ public class SequenceList : MonoBehaviour
                 index++;
                 ScrollDown();
                 UpdateUi();
-                InstantiateKeyPoints();
             }
         }
     }
@@ -164,5 +184,42 @@ public class SequenceList : MonoBehaviour
 
     public void DeleteSelectedSequence()
     {
+        if (sequences.Count > 0)
+        {
+            sequences.RemoveAt(index);
+            // BinaryFormatter binaryFormatter = new BinaryFormatter();
+            // FileStream file = File.Open(Application.persistentDataPath + "/sequences.dat", FileMode.Create);
+            // binaryFormatter.Serialize(file, sequences);
+            // file.Close();
+
+            shownSequences.RemoveAt(shownIndex);
+
+            if (shownSequences.Count == 5)
+            {
+                int nextSequenceIndex = index + 5 - shownIndex;
+                int previousSequenceIndex = index - shownIndex - 1;
+
+                // Il y a des séquences plus bas que les shownSequences
+                if (sequences.Count >= nextSequenceIndex)
+                {
+                    shownSequences.Add(sequences[nextSequenceIndex]);
+                }
+                else if (previousSequenceIndex >= 0)
+                {
+                    shownSequences.Insert(0, sequences[previousSequenceIndex]);
+                    if (shownIndex > 0)
+                    {
+                        shownIndex--;
+                    }
+                }
+            }
+            else if (shownIndex > 0)
+            {
+                index--;
+                shownIndex--;
+            }
+        }
+
+        UpdateUi();
     }
 }
