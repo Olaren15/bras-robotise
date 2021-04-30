@@ -1162,6 +1162,24 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1021757365}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &363926722 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2273072410583285066, guid: a45a9e96a8b148f419041c88933b762c,
+    type: 3}
+  m_PrefabInstance: {fileID: 524847229}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &363926732
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 363926722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 778e4a92e1851954a9698b907ea0ffe6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &364874656
 GameObject:
   m_ObjectHideFlags: 0
@@ -1269,6 +1287,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: LightSwitch
+      objectReference: {fileID: 0}
+    - target: {fileID: 2144113855157136299, guid: 02fd0d9367505d246809efc9ec787968,
+        type: 3}
+      propertyPath: ignoreMaterialChange
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5213200499510531071, guid: 02fd0d9367505d246809efc9ec787968,
+        type: 3}
+      propertyPath: ignoreMaterialChange
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7617689801115153807, guid: 02fd0d9367505d246809efc9ec787968,
         type: 3}
@@ -2019,7 +2047,12 @@ PrefabInstance:
     - target: {fileID: 2012010903891086411, guid: a45a9e96a8b148f419041c88933b762c,
         type: 3}
       propertyPath: m_Name
-      value: SingleButton
+      value: GravityButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 3240495722317663736, guid: a45a9e96a8b148f419041c88933b762c,
+        type: 3}
+      propertyPath: m_Name
+      value: Button
       objectReference: {fileID: 0}
     - target: {fileID: 6150209381145701627, guid: a45a9e96a8b148f419041c88933b762c,
         type: 3}
@@ -2034,12 +2067,42 @@ PrefabInstance:
     - target: {fileID: 6150209381145701627, guid: a45a9e96a8b148f419041c88933b762c,
         type: 3}
       propertyPath: downEvent.m_PersistentCalls.m_Calls.Array.size
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6150209381145701627, guid: a45a9e96a8b148f419041c88933b762c,
+        type: 3}
+      propertyPath: downEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6150209381145701627, guid: a45a9e96a8b148f419041c88933b762c,
         type: 3}
       propertyPath: downEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
+      objectReference: {fileID: 363926732}
+    - target: {fileID: 6150209381145701627, guid: a45a9e96a8b148f419041c88933b762c,
+        type: 3}
+      propertyPath: downEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6150209381145701627, guid: a45a9e96a8b148f419041c88933b762c,
+        type: 3}
+      propertyPath: downEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ToggleGravity
+      objectReference: {fileID: 0}
+    - target: {fileID: 6150209381145701627, guid: a45a9e96a8b148f419041c88933b762c,
+        type: 3}
+      propertyPath: downEvent.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: GravityButton, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6150209381145701627, guid: a45a9e96a8b148f419041c88933b762c,
+        type: 3}
+      propertyPath: downEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8121657782454523884, guid: a45a9e96a8b148f419041c88933b762c,
+        type: 3}
+      propertyPath: m_Name
+      value: Box
       objectReference: {fileID: 0}
     - target: {fileID: 8410353971622152843, guid: a45a9e96a8b148f419041c88933b762c,
         type: 3}

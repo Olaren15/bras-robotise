@@ -7,7 +7,7 @@ public class FlashLightToggle : MonoBehaviour
     public SteamVR_Action_Boolean steamVRActionBoolean;
     private Hand[] hands;
     private GameObject lightObject;
-    private GameObject light;
+    private GameObject flashLight;
     public Material unlitMat;
     public Material litMat;
     private MeshRenderer meshRenderer;
@@ -18,9 +18,9 @@ public class FlashLightToggle : MonoBehaviour
     {
         hands = FindObjectsOfType<Hand>();
         lightObject = GameObject.Find("LightObject").gameObject;
-        light = lightObject.transform.Find("Light").gameObject;
+        flashLight = lightObject.transform.Find("Light").gameObject;
         meshRenderer = lightObject.GetComponent<MeshRenderer>();
-        light.SetActive(false);
+        flashLight.SetActive(false);
     }
 
     public void OnHeldUpdate()
@@ -31,12 +31,12 @@ public class FlashLightToggle : MonoBehaviour
             {
                 if (lit)
                 {
-                    light.SetActive(false);
+                    flashLight.SetActive(false);
                     meshRenderer.material = unlitMat;
                 }
                 else
                 {
-                    light.SetActive(true);
+                    flashLight.SetActive(true);
                     meshRenderer.material = litMat;
 
                 }
