@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 198321560017527566}
   - component: {fileID: 199049106770456860}
   m_Layer: 0
-  m_Name: PS_Parent
+  m_Name: Fire
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4830,7 +4830,7 @@ GameObject:
   - component: {fileID: 198778633208645958}
   - component: {fileID: 199242344788938392}
   m_Layer: 0
-  m_Name: PS_Sparks
+  m_Name: FireSparks
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9646,7 +9646,7 @@ GameObject:
   - component: {fileID: 198260517930635872}
   - component: {fileID: 199061620583998734}
   m_Layer: 0
-  m_Name: PS_Fire_ADD
+  m_Name: FireFlame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9661,7 +9661,7 @@ Transform:
   m_GameObject: {fileID: 1911683160194432}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0, y: -0, z: 0}
-  m_LocalScale: {x: 0.05, y: 0.05, z: 0.05}
+  m_LocalScale: {x: 0.015769325, y: 0.015769325, z: 0.015769325}
   m_Children: []
   m_Father: {fileID: 4521404770085940}
   m_RootOrder: 0
@@ -9749,7 +9749,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.95
+      scalar: 0.64
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -9802,7 +9802,7 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 3.77
+      scalar: 8
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -9856,7 +9856,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 1, g: 0.8651116, b: 0.74264705, a: 1}
+      maxColor: {r: 0.7216981, g: 0.7547404, b: 1, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -10617,12 +10617,12 @@ ParticleSystem:
         - serializedVersion: 3
           time: 0.0022087097
           value: 0
-          inSlope: 5.041416
-          outSlope: 5.041416
+          inSlope: 2.8057752
+          outSlope: 2.8057752
           tangentMode: 0
           weightedMode: 0
           inWeight: 0.33333334
-          outWeight: 0.07522086
+          outWeight: 0.10619465
         - serializedVersion: 3
           time: 0.9999901
           value: 0
@@ -10937,9 +10937,9 @@ ParticleSystem:
       maxColor: {r: 1, g: 1, b: 1, a: 1}
       maxGradient:
         serializedVersion: 2
-        key0: {r: 0.011764692, g: 0.038765576, b: 0.81960785, a: 0}
-        key1: {r: 0.2783019, g: 0.6422199, b: 1, a: 1}
-        key2: {r: 1, g: 0.0092261, b: 0, a: 0}
+        key0: {r: 0.33980063, g: 0.35045928, b: 0.8679245, a: 1}
+        key1: {r: 0.14297791, g: 0.39589605, b: 0.5943396, a: 1}
+        key2: {r: 0.3207547, g: 0.012821754, b: 0, a: 0}
         key3: {r: 0, g: 0, b: 0, a: 0}
         key4: {r: 0, g: 0, b: 0, a: 0}
         key5: {r: 0, g: 0, b: 0, a: 0}
