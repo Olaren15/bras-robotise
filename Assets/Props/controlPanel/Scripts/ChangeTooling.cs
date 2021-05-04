@@ -1,41 +1,40 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class ChangeTooling : MonoBehaviour
 {
     public GameObject suctionTool;
     public GameObject plasmaTorch;
-    private int indice = 0;
-    
+    private int index;
+
+    public ActivateTooling activateTooling;
+
     public void CycleThroughToolings()
     {
-        if (indice == 2)
+        activateTooling.ToggleTooling(true);
+
+        if (index == 2)
         {
-            indice = 0;
+            index = 0;
         }
         else
         {
-            indice++;
+            index++;
         }
-        
-        if (indice == 1)
+
+        if (index == 1)
         {
             suctionTool.SetActive(true);
             plasmaTorch.SetActive(false);
-
         }
-        else if (indice == 2)
+        else if (index == 2)
         {
             suctionTool.SetActive(false);
             plasmaTorch.SetActive(true);
         }
-        else if(indice == 0)
+        else if (index == 0)
         {
             suctionTool.SetActive(false);
             plasmaTorch.SetActive(false);
-
         }
-        
     }
 }

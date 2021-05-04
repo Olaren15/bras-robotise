@@ -4685,6 +4685,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   suctionTool: {fileID: 0}
   plasmaTorch: {fileID: 0}
+  activateTooling: {fileID: 650636707}
 --- !u!1 &1266426773
 GameObject:
   m_ObjectHideFlags: 0
@@ -8654,7 +8655,7 @@ MonoBehaviour:
       - m_Target: {fileID: 650636707}
         m_TargetAssemblyTypeName: ActivateTooling, Assembly-CSharp
         m_MethodName: ToggleTooling
-        m_Mode: 1
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine

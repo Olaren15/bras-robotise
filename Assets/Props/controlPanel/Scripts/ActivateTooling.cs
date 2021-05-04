@@ -17,16 +17,24 @@ public class ActivateTooling : MonoBehaviour
         meshRenderer = GetComponent<MeshRenderer>();
     }
 
-    public void ToggleTooling()
+    public void ToggleTooling(bool forceDeactivate = false)
     {
-        active = !active;
+        if (forceDeactivate)
+        {
+            active = false;
+        }
+        else
+        {
+            active = !active;
+        }
+
         meshRenderer.material = active ? pressedMaterial : defaultMaterial;
 
-        if (torchTooling.enabled)
+        if (torchTooling.gameObject.activeSelf)
         {
             torchTooling.Activate(active);
         }
-        else if (suctionTooling.enabled)
+        else if (suctionTooling.gameObject.activeSelf)
         {
             suctionTooling.Activate(active);
         }
