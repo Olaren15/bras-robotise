@@ -23,8 +23,6 @@ public class ChangeTooling : MonoBehaviour
     {
         if (!sequencePlayer.playing && !sequenceRecorder.recording)
         {
-            activateTooling.ToggleTooling(true);
-
             if (index == 2)
             {
                 index = 0;
@@ -40,6 +38,8 @@ public class ChangeTooling : MonoBehaviour
 
     public void ChangeTool(int toolingId)
     {
+        activateTooling.ToggleTooling(true);
+
         index = toolingId;
         if (index == 1)
         {

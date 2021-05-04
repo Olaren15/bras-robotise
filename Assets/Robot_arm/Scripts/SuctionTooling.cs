@@ -23,7 +23,8 @@ public class SuctionTooling : MonoBehaviour
             if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward * -1),
                 out RaycastHit hit, MaxRaycastDistance))
             {
-                if (hit.rigidbody.gameObject.GetComponent<Throwable>() && !hit.rigidbody.gameObject.CompareTag("Target"))
+                if (hit.rigidbody.gameObject.GetComponent<Throwable>() &&
+                    !hit.rigidbody.gameObject.CompareTag("Target"))
                 {
                     grabbedObject = hit.rigidbody.gameObject;
 
@@ -33,13 +34,8 @@ public class SuctionTooling : MonoBehaviour
                         hand.DetachObject(grabbedObject);
                     }
 
-                    grabbedObject.AddComponent<IgnoreHovering>();
+                    EnableIgnoreHovering(true, grabbedObject);
                     grabbedObject.GetComponent<Rigidbody>().isKinematic = true;
-
-                    foreach (Transform child in grabbedObject.transform)
-                    {
-                        child.gameObject.AddComponent<IgnoreHovering>();
-                    }
 
                     grabbedObject.transform.position += transform.TransformDirection(Vector3.forward) * hit.distance;
 
@@ -52,17 +48,29 @@ public class SuctionTooling : MonoBehaviour
         {
             if (grabbedObject)
             {
-                Destroy(grabbedObject.GetComponent<IgnoreHovering>());
+                EnableIgnoreHovering(false, grabbedObject);
                 grabbedObject.GetComponent<Rigidbody>().isKinematic = false;
-
-                foreach (Transform child in grabbedObject.transform)
-                {
-                    Destroy(child.gameObject.GetComponent<IgnoreHovering>());
-                }
 
                 grabbedObject.transform.parent = originalParent;
                 grabbedObject = null;
             }
+        }
+    }
+
+    private void EnableIgnoreHovering(bool enable, GameObject gameObject1)
+    {
+        if (enable)
+        {
+            gameObject1.AddComponent<IgnoreHovering>();
+        }
+        else
+        {
+            Destroy(gameObject1.GetComponent<IgnoreHovering>());
+        }
+
+        foreach (Transform transform1 in gameObject1.transform)
+        {
+            EnableIgnoreHovering(enable, transform1.gameObject);
         }
     }
 }
