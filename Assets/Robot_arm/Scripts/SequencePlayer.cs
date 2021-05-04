@@ -7,30 +7,45 @@ public class SequencePlayer : MonoBehaviour
 {
     public bool playing { get; private set; }
 
-    private List<KeyPoint> sequence;
+    private Sequence sequence;
     private int nextSequenceIndex;
 
     public GameObject target;
     public GameObject targetRotation;
 
     public float speed = 0.3f;
+    private ActivateTooling activateTooling;
+    private ChangeTooling changeTooling;
+    
+    private void Start()
+    {
+        activateTooling = FindObjectOfType<ActivateTooling>();
+        changeTooling = FindObjectOfType<ChangeTooling>();
+    }
 
-    public void Play(List<KeyPoint> sequenceToPlay)
+    public void Play(Sequence sequenceToPlay)
     {
         sequence = sequenceToPlay;
 
-        if (sequence.Count >= 1)
+        if (sequence.keyPoints.Count >= 1)
         {
             playing = true;
-            target.transform.position = sequence[0].TargetPosition;
-            targetRotation.transform.position = sequence[0].TargetRotationPosition;
+            target.transform.position = sequence.keyPoints[0].TargetPosition;
+            targetRotation.transform.position = sequence.keyPoints[0].TargetRotationPosition;
             targetRotation.transform.rotation = Quaternion.identity;
             targetRotation.transform.parent = target.transform.parent;
-
+            
+            changeTooling.ChangeTool(sequence.toolingId);
+            
+            if (activateTooling.active != sequence.keyPoints[0].toolActivated)
+            {
+                activateTooling.ActivateTool(sequence.keyPoints[0].toolActivated);
+            }
+            
             target.AddComponent<IgnoreHovering>();
             targetRotation.AddComponent<IgnoreHovering>();
 
-            if (sequence.Count >= 2)
+            if (sequence.keyPoints.Count >= 2)
             {
                 nextSequenceIndex = 1;
             }
@@ -41,13 +56,13 @@ public class SequencePlayer : MonoBehaviour
     {
         if (playing)
         {
-            if (target.transform.position != sequence[nextSequenceIndex].TargetPosition
-                || targetRotation.transform.position != sequence[nextSequenceIndex].TargetRotationPosition)
+            if (target.transform.position != sequence.keyPoints[nextSequenceIndex].TargetPosition
+                || targetRotation.transform.position != sequence.keyPoints[nextSequenceIndex].TargetRotationPosition)
             {
                 float distance =
-                    Vector3.Distance(target.transform.position, sequence[nextSequenceIndex].TargetPosition);
+                    Vector3.Distance(target.transform.position, sequence.keyPoints[nextSequenceIndex].TargetPosition);
                 float distanceRotation = Vector3.Distance(targetRotation.transform.position,
-                    sequence[nextSequenceIndex].TargetRotationPosition);
+                    sequence.keyPoints[nextSequenceIndex].TargetRotationPosition);
 
                 float ratio;
                 float ratioRotation;
@@ -63,17 +78,26 @@ public class SequencePlayer : MonoBehaviour
                 }
 
                 target.transform.position = Vector3.MoveTowards(target.transform.position,
-                    sequence[nextSequenceIndex].TargetPosition, speed * ratio * Time.deltaTime);
+                    sequence.keyPoints[nextSequenceIndex].TargetPosition, speed * ratio * Time.deltaTime);
 
                 targetRotation.transform.position = Vector3.MoveTowards(targetRotation.transform.position,
-                    sequence[nextSequenceIndex].TargetRotationPosition, speed * ratioRotation * Time.deltaTime);
+                    sequence.keyPoints[nextSequenceIndex].TargetRotationPosition, speed * ratioRotation * Time.deltaTime);
             }
-            else if (sequence.Count > nextSequenceIndex + 1)
+            else if (sequence.keyPoints.Count > nextSequenceIndex + 1)
             {
+                if (activateTooling.active != sequence.keyPoints[nextSequenceIndex].toolActivated)
+                {
+                    activateTooling.ActivateTool(sequence.keyPoints[nextSequenceIndex].toolActivated);
+                }
                 nextSequenceIndex++;
+
             }
             else
             {
+                if (activateTooling.active != sequence.keyPoints[nextSequenceIndex].toolActivated)
+                {
+                    activateTooling.ActivateTool(sequence.keyPoints[nextSequenceIndex].toolActivated);
+                }
                 playing = false;
                 nextSequenceIndex = 0;
                 targetRotation.transform.parent = target.transform;

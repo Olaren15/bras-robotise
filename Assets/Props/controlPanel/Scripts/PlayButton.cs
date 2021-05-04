@@ -20,7 +20,7 @@ public class PlayButton : MonoBehaviour
         if (sequenceList.currentSequence != null && !sequenceRecorder.recording && !sequencePlayer.playing)
         {
             reset.ResetRobotPosition();
-            sequencePlayer.Play(sequenceList.currentSequence.keyPoints);
+            sequencePlayer.Play(sequenceList.currentSequence);
         }
     }
 }

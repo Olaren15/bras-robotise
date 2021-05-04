@@ -23,10 +23,10 @@ public class SuctionTooling : MonoBehaviour
             if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward * -1),
                 out RaycastHit hit, MaxRaycastDistance))
             {
-                grabbedObject = hit.rigidbody.gameObject;
-
-                if (grabbedObject.GetComponent<Throwable>() && !grabbedObject.CompareTag("Target"))
+                if (hit.rigidbody.gameObject.GetComponent<Throwable>() && !hit.rigidbody.gameObject.CompareTag("Target"))
                 {
+                    grabbedObject = hit.rigidbody.gameObject;
+
                     foreach (Hand hand in hands)
                     {
                         // detach object from hand if held
@@ -61,6 +61,7 @@ public class SuctionTooling : MonoBehaviour
                 }
 
                 grabbedObject.transform.parent = originalParent;
+                grabbedObject = null;
             }
         }
     }

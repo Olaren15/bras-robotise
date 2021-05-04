@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using Robot_arm.Scripts;
@@ -10,6 +11,15 @@ public class SequenceRecorder : MonoBehaviour
     public GameObject keyPointPrefab;
     private List<KeyPoint> sequence = new List<KeyPoint>();
     private List<GameObject> sequenceGameObjects = new List<GameObject>();
+    private ActivateTooling activateTooling;
+    private ChangeTooling changeTooling;
+
+
+    private void Start()
+    {
+        activateTooling = FindObjectOfType<ActivateTooling>();
+        changeTooling = FindObjectOfType<ChangeTooling>();
+    }
 
     public void StartRecording()
     {
@@ -27,6 +37,7 @@ public class SequenceRecorder : MonoBehaviour
     {
         SetRecording(false);
         Sequence newSequence = new Sequence(sequence.ToList());
+        newSequence.toolingId = changeTooling.index;
         sequence.Clear();
         
         return newSequence;
@@ -44,7 +55,6 @@ public class SequenceRecorder : MonoBehaviour
             GameObject keyPoint = Instantiate(keyPointPrefab, targetTransform.position, Quaternion.identity);
             keyPoint.transform.Find("TargetRotation").transform.position = targetRotationTransform.position;
             keyPoint.transform.Find("Canvas").Find("Text").GetComponent<Text>().text = (sequence.Count + 1).ToString();
-
             sequenceGameObjects.Add(keyPoint);
             AddKeyPointToSequence(targetTransform.position, targetRotationTransform.position);
         }
@@ -52,7 +62,7 @@ public class SequenceRecorder : MonoBehaviour
 
     private void AddKeyPointToSequence(Vector3 targetPosition, Vector3 targetRotationPosition)
     {
-        KeyPoint keyPoint = new KeyPoint(targetPosition, targetRotationPosition);
+        KeyPoint keyPoint = new KeyPoint(targetPosition, targetRotationPosition, activateTooling.active);
         sequence.Add(keyPoint);
     }
 

@@ -20,10 +20,13 @@ public class SequenceList : MonoBehaviour
     public Sequence currentSequence => sequences.Count > index ? sequences[index] : null;
 
     public List<GameObject> panels;
+    private ChangeTooling changeTooling;
 
 
     private void Start()
     {
+        changeTooling = FindObjectOfType<ChangeTooling>();
+
         sequencePlayer = FindObjectOfType<SequencePlayer>();
         sequenceRecorder = FindObjectOfType<SequenceRecorder>();
 
@@ -70,6 +73,8 @@ public class SequenceList : MonoBehaviour
 
         if (currentSequence != null)
         {
+            changeTooling.ChangeTool(currentSequence.toolingId);
+
             InstantiateKeyPoints();
         }
     }

@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class ActivateTooling : MonoBehaviour
 {
-    private bool active;
+    public bool active;
 
     public TorchTooling torchTooling;
     public SuctionTooling suctionTooling;
@@ -12,11 +12,15 @@ public class ActivateTooling : MonoBehaviour
 
     private MeshRenderer meshRenderer;
     private SequencePlayer sequencePlayer;
+    private SequenceRecorder sequenceRecorder;
+
+    public OnHeldTarget onHeldTarget;
 
     private void Start()
     {
         meshRenderer = GetComponent<MeshRenderer>();
         sequencePlayer = FindObjectOfType<SequencePlayer>();
+        sequenceRecorder = FindObjectOfType<SequenceRecorder>();
 
     }
 
@@ -33,17 +37,29 @@ public class ActivateTooling : MonoBehaviour
                 active = !active;
             }
 
-            meshRenderer.material = active ? pressedMaterial : defaultMaterial;
-
-            if (torchTooling.gameObject.activeSelf)
+            if (sequenceRecorder.recording && !forceDeactivate)
             {
-                torchTooling.Activate(active);
+                onHeldTarget.SaveKeyPoint();
             }
-            else if (suctionTooling.gameObject.activeSelf)
-            {
-                suctionTooling.Activate(active);
-            }
+            
+            ActivateTool(active);
         }
         
     }
+
+    public void ActivateTool(bool activate)
+    {
+        active = activate;
+        meshRenderer.material = active ? pressedMaterial : defaultMaterial;
+
+        if (torchTooling.gameObject.activeSelf)
+        {
+            torchTooling.Activate(active);
+        }
+        else if (suctionTooling.gameObject.activeSelf)
+        {
+            suctionTooling.Activate(active);
+        }
+    }
+    
 }

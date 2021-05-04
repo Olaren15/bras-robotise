@@ -27,11 +27,16 @@ public class OnHeldTarget : MonoBehaviour
         {
             if (steamVRActionBoolean.GetStateDown(hand.handType))
             {
-                if (range.isInRange && rotationRange.isInRange)
-                {
-                    sequenceRecorder.SaveKeyPoint(targetTransform, targetRotationTransform);
-                }
+                SaveKeyPoint();
             }
+        }
+    }
+
+    public void SaveKeyPoint()
+    {
+        if (range.isInRange && rotationRange.isInRange)
+        {
+            sequenceRecorder.SaveKeyPoint(targetTransform, targetRotationTransform);
         }
     }
 }

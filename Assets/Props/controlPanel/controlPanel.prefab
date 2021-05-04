@@ -4685,6 +4685,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   suctionTool: {fileID: 0}
   plasmaTorch: {fileID: 0}
+  index: 0
   activateTooling: {fileID: 650636707}
 --- !u!1 &1266426773
 GameObject:
@@ -8707,11 +8708,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4e9e1ca5bcfe7b48b2201201db4da96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  active: 0
   torchTooling: {fileID: 0}
   suctionTooling: {fileID: 0}
   defaultMaterial: {fileID: -3033667219593020291, guid: cbeb092b9053c77428b674b93e6305b1,
     type: 3}
   pressedMaterial: {fileID: 2100000, guid: 4acb926fdad02384bb73915b7191ba70, type: 2}
+  onHeldTarget: {fileID: 0}
 --- !u!1 &4054536827346332445
 GameObject:
   m_ObjectHideFlags: 0

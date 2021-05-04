@@ -7,6 +7,7 @@ public class Sequence
 {
     public List<KeyPoint> keyPoints { get; set; }
     public int id { get; set; }
+    public int toolingId { get; set; }
 
     public Sequence(List<KeyPoint> keyPoints)
     {
