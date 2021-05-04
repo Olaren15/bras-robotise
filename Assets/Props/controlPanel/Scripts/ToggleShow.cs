@@ -7,6 +7,7 @@ public class ToggleShow : MonoBehaviour
     private GameObject[] settingsScreenButtons;
 
     public GameObject sequenceListCanvas;
+    public GameObject speedCanvas;
 
     public void Start()
     {
@@ -20,6 +21,7 @@ public class ToggleShow : MonoBehaviour
         ToggleButtons(mainScreenButtons, false);
         ToggleButtons(settingsScreenButtons, true);
         sequenceListCanvas.SetActive(false);
+        speedCanvas.SetActive(true);
     }
 
     public void GoToMain()
@@ -27,6 +29,7 @@ public class ToggleShow : MonoBehaviour
         ToggleButtons(settingsScreenButtons, false);
         ToggleButtons(mainScreenButtons, true);
         sequenceListCanvas.SetActive(true);
+        speedCanvas.SetActive(false);
     }
 
     private static void ToggleButtons(IEnumerable<GameObject> buttons, bool enable)

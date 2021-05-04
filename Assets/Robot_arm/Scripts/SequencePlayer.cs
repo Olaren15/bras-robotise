@@ -1,5 +1,3 @@
-using System.Collections.Generic;
-using Robot_arm.Scripts;
 using UnityEngine;
 using Valve.VR.InteractionSystem;
 
@@ -13,7 +11,7 @@ public class SequencePlayer : MonoBehaviour
     public GameObject target;
     public GameObject targetRotation;
 
-    public float speed = 0.3f;
+    public int speed = 3;
     private ActivateTooling activateTooling;
     private ChangeTooling changeTooling;
     
@@ -78,10 +76,10 @@ public class SequencePlayer : MonoBehaviour
                 }
 
                 target.transform.position = Vector3.MoveTowards(target.transform.position,
-                    sequence.keyPoints[nextSequenceIndex].TargetPosition, speed * ratio * Time.deltaTime);
+                    sequence.keyPoints[nextSequenceIndex].TargetPosition, speed / 10.0f * ratio * Time.deltaTime);
 
                 targetRotation.transform.position = Vector3.MoveTowards(targetRotation.transform.position,
-                    sequence.keyPoints[nextSequenceIndex].TargetRotationPosition, speed * ratioRotation * Time.deltaTime);
+                    sequence.keyPoints[nextSequenceIndex].TargetRotationPosition, speed / 10.0f * ratioRotation * Time.deltaTime);
             }
             else if (sequence.keyPoints.Count > nextSequenceIndex + 1)
             {
