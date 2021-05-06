@@ -90,7 +90,6 @@ public class BigArmSequencePlayer : MonoBehaviour
             }
             else if (sequence.keyPoints.Count > nextSequenceIndex + 1)
             {
-                print(sequence.keyPoints[nextSequenceIndex].toolActivated);
                 if (active != sequence.keyPoints[nextSequenceIndex].toolActivated)
                 {
                     active = !active;
