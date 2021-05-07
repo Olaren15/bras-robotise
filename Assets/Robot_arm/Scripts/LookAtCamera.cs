@@ -6,7 +6,7 @@ public class LookAtCamera : MonoBehaviour
 
     private void Start()
     {
-        cam = FindObjectOfType<Camera>();
+        cam = Camera.main;
     }
 
     private void LateUpdate()
